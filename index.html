@@ -4,28 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="mathilde.js" defer></script>
+
 </head>
 <body>
     <div class="bugerMenu"></div>
 
     <div id="soegefelt">
         <button id="soegefeltButton" onclick="soeFeltIndput()">Søg</button>
-        <input id="indputFelt" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;">
         <button id="lukKnap" onclick="soeFeltIndput()" style="display: none;">x</button>
-        
-    
-
-        <ul id="soegeordList">
-            <li><a href="australien.html">Australien</a></li>
-            <li><a href="asien.html">Asien</a></li>
-            <li><a href="nordamerika.html">Nordamerika</a></li>
-            <li><a href="sydamerika.html">Sydamerika</a></li>
-            <li><a href="afrika.html">Afrika</a></li>
-            <li><a href="europa.html">Europa</a></li>
-            <li><a href="soloRejser.html">Solorejser</a></li>
-            <li><a href="gruppeRejse.html">Grupperejser</a></li>
-        </ul>
-    </div>
+        <input id="indputFelt" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;" onkeyup="filterLinks()">
+        <ul id="soegeResultater"></ul> <!-- tom ul liste som bliver fyldt i js med søgeresultater -->
+    </div>    
 
     <div class="billedeGalleri"></div>
 
