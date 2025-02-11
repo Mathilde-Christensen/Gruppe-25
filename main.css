@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    /* at padding og border bliver integreret i elementets samlede bredde og højde på hele siden, nemmer at arbejde med */
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 4em;
+    line-height: 4rem;
+}
+
+h2 {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 3em;
+    line-height: 3rem;
+}
+
+h3 {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 2em;
+    line-height: 2rem;
+}
+
+h4 {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+p {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    font-family: "Poppins", serif;
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 1em;
+    line-height: 1rem;
+    padding: 0.5rem;
+    border: 0rem;
+}
