@@ -15,12 +15,12 @@ maxIndex--; //Trækker 1 fra, da vi starter på index 0
 const imageWidth = images[0].clientWidth + 10; //Billedets bredde plus margin
 const scrollAmount = imageWidth * imagesPerSlide //Hvor langt der skal scrolles
 
-nextButton.addEventListener("click", function(){
-    if(index < maxIndex){
-        index++;
+nextButton.addEventListener("click", function(){ //"Lytter" efter klik på næste-knappen (højre knap)
+    if(index < maxIndex){ 
+        index++; //øger index altså går til næste billederække
     } else{
         index = 0; //Så looper vi tilbage til første billederække
     }
-    track.computedStyleMap.transform
-}
-)
+    track.style.transform = 'translateX(-${index * scrollAmount}px)';
+});
+
