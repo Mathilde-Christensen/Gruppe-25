@@ -252,7 +252,8 @@ button {
     border-radius: 50px; /* Dette gør billederne runde*/
     object-fit: cover; /* Gør at billederne passer fint i cirklerne */
     margin: 15px;
-    border: 2px #ffffff;
+    border: 2px;
+    border-color: #ffffff;
 }
 
 #prevButton, #nextButton {
