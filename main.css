@@ -60,6 +60,30 @@ button {
     border: 0rem;
 }
 
+/* menubar style*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    /*headeren ligger sig foran videon fra heroen*/
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+.header__logo {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 1.5em;
+    line-height: 1.5rem;
+    color: #fff;
+    padding: 1rem;
+}
+
+
 /* hero style*/
 
 .hero {
