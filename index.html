@@ -42,9 +42,13 @@
     <div class="bugerMenu"></div>
 
     <div id="soegefelt">
-        <button id="soegefeltButton" onclick="soeFeltIndput()">SØG</button>
-        <button id="lukKnap" onclick="soeFeltIndput()" style="display: none;">x</button>
-        <input id="indputFelt" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;" onkeyup="filterLinks()">
+        <button id="soegefeltButton" onclick="soeFeltIndput()">Søg</button>
+
+        <div id="soegBoks" style="display: none;">
+            <button id="lukKnap" onclick="soeFeltIndput()" style="display: none;">X</button>
+            <input id="indputFelt" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;" onkeyup="filterLinks()">
+        </div>
+
         <ul id="soegeResultater"></ul> <!-- tom ul liste som bliver fyldt i js med søgeresultater -->
     </div>    
 
