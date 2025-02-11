@@ -217,26 +217,33 @@ button {
 /* Kirjas js element*/
 .billedeGalleri{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     position: relative;
     width: 80%;
-    height: 80%;
+    min-height: 300px;
     margin: auto;
     background-color: #0073ff;
+    padding: 40px 0;
+    border-radius: 10px;
 }
 
-.gallery-container{
-    width: calc(80px * 7 * 10px * 6); /* Giver plads til syv billeder plus margin */
+.billedeGalleri h2, billedeGalleri p{
+    color: #ffffff;
+    text-align: center;
+}
+
+.gallery-container{ /*Container, der skjuler billeder uden for synsfeltet*/
+    width: calc((80px + 10px) * 7); /* Giver plads til syv billeder samt margin */
     overflow: hidden;
-    border-radius: 10px;
 }
 
 .gallery-track{
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 5000px; /* Skal være bred nok til alle billeder */
+    width: max-content; /* Skal være bred nok til alle billeder */
 }
 
 .gallery-track img {
@@ -244,11 +251,14 @@ button {
     height: 80px;
     border-radius: 50px; /* Dette gør billederne runde*/
     object-fit: cover; /* Gør at billederne passer fint i cirklerne */
-    margin: 5px;
+    margin: 15px;
     border: 2px #ffffff;
 }
 
-#nextButton, #prevButton{
+#prevButton, #nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
     background-color: #808080;
     color: #ffffff;
     border: none;
@@ -257,6 +267,14 @@ button {
     cursor: pointer;
     border-radius: 50%;
     transition: background-color 0.3s;
+}
+
+#prevButton{
+    left: 10px;
+}
+
+#nextButton{
+    right: 10px;
 }
 
 #nextButton:hover, #prevButton:hover{
