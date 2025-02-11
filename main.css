@@ -67,7 +67,7 @@ button {
 /* menubar style*/
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
     position: fixed;
     top: 0;
@@ -85,6 +85,9 @@ button {
     line-height: 1.5rem;
     color: #fff;
     padding: 1rem;
+    position: absolute;
+    left: 50%; /* Centrerer logoet */
+    transform: translateX(-50%); /* Finjusterer centering */
 }
 
 
@@ -150,6 +153,7 @@ button {
 
 
 /* Mathildes js element*/
+
 #soegefeltButton {
     background:none;
     font-family: "Poppins", serif;
