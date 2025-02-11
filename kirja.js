@@ -1,5 +1,5 @@
-const track = document.querySelector(" .gallery-track");
-const images = document.querySelectorAll(" .gallery-track img");
+const track = document.querySelector(".gallery-track");
+const images = document.querySelectorAll(".gallery-track img");
 const prevButton = document.getElementById("prevButton");
 const nextButton = document.getElementById("nextButton");
 
@@ -21,7 +21,7 @@ nextButton.addEventListener("click", function(){ //"Lytter" efter klik på næst
     } else{
         index = 0; //Så looper vi tilbage til første billederække
     }
-    track.style.transform = 'translateX(-${index * scrollAmount}px)';
+    track.style.transform = `translateX(-${index * scrollAmount}px)`;
 });
 
 prevButton.addEventListener("click", function(){
@@ -30,5 +30,5 @@ prevButton.addEventListener("click", function(){
     } else{
         index = maxIndex; //Så looper vi til sidste billederække
     }
-    track.style.transform = 'translateX(-${index * scrollAmount}px)';
+    track.style.transform = `translateX(-${index * scrollAmount}px)`;
 });

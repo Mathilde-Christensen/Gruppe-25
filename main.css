@@ -222,12 +222,13 @@ button {
     gap: 10px;
     position: relative;
     width: 80%;
+    height: 80%;
     margin: auto;
     background-color: #0073ff;
 }
 
 .gallery-container{
-    width: calc(150px * 7 * 10px * 6); /* Giver plads til syv billeder plus margin */
+    width: calc(80px * 7 * 10px * 6); /* Giver plads til syv billeder plus margin */
     overflow: hidden;
     border-radius: 10px;
 }
