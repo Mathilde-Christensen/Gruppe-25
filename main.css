@@ -80,10 +80,6 @@ button {
     border: 0rem;
     border-bottom: 2px solid #000;
     color: #eb4b1f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     margin: auto;
 }
 
@@ -91,14 +87,34 @@ button {
     border: 0rem;
     background-color: #fff;
     width: 100vw;
-    height: 25vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 15vh;
 }
 
 #lukKnap {
-    
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 2em;
+    color: #eb4b1f;
+    margin: 0% 0% 0% 97%;
 }
 
+#soegeResultater {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 2em;
+}
 
+#soegeResultater li a {
+    display: block; 
+    width: fit-content; 
+    margin: 0% 0% 0% 37%; 
+    text-decoration: none;
+    color: black; 
+    padding: 10px;
+}
+
+#soegeResultater li a:hover {
+    color: #eb4b1f;
+}
