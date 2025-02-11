@@ -182,8 +182,20 @@ button {
 
 #soegBoks {
     border: 0rem;
+    border: 0rem;
     background-color: #fff;
-    width: 100vh;
+    width: 100vw;  
+    height: auto; 
+    min-height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 #lukKnap {
@@ -206,7 +218,6 @@ button {
 #soegeResultater li a {
     display: block; 
     width: fit-content; 
-    margin: 0% 0% 0% 37%; 
     text-decoration: none;
     color: black; 
     padding: 10px;
