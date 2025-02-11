@@ -4,18 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="mathilde.js" defer></script>
     <script src = "kirja.js" defer></script>
 
 </head>
 <body>
+
+    <div class="header">
+
+        <div class="header__menubar">
+
+        </div>
+
+    </div>
+
+    <div class="hero">
+        <h1>EVENTYRET<br>STARTER HER</h1>
+
+        <h4>
+            Vi hjælper dig med at planlægge dit næste store rejseeventyr uanset om du drømmer om backpacking, 
+            dykning, surfing, sandstrande eller grupperejse. Rejsen starter her. Er du klar?
+        </h4>
+    </div>
+
+    <h2>Hvad er din drømmerejse?</h2>
+
+    <h3>Hvor skal du rejse hen i 2025: Top destinationer du ikke må gå glip af</h3>
+
+    <p>Få de bedste tilbud på dine internationale fly. 
+        Vi sammenligner priser blandt mere end 500 flyselskaber fra hele verden, 
+        for at sikre, at du får de bedste priser med rabatter til studerende og unge.</p>
+
     <div class="bugerMenu"></div>
 
     <div id="soegefelt">
         <button id="soegefeltButton" onclick="soeFeltIndput()">Søg</button>
-        <button id="lukKnap" onclick="soeFeltIndput()" style="display: none;">x</button>
-        <input id="indputFelt" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;" onkeyup="filterLinks()">
+
+        <div id="soegBoks" style="display: none;">
+            <button id="lukKnap" onclick="soeFeltIndput()" style="display: none;">X</button>
+            <input id="indputFelt" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;" onkeyup="filterLinks()">
+        </div>
+
         <ul id="soegeResultater"></ul> <!-- tom ul liste som bliver fyldt i js med søgeresultater -->
     </div>    
 

@@ -3,16 +3,19 @@ function soeFeltIndput() { //funktionen kører, når knappen "Søg"bliver trykke
     let lukKnap = document.getElementById("lukKnap"); //Gemmer elementet i en variabel, gør det muligt at manipulere i elementer fra HTML (dom)
     let soegefeltButton = document.getElementById("soegefeltButton");
     let liste = document.getElementById("soegeResultater"); // Henter søgeresultat-listen
+    let soegBoks = document.getElementById("soegBoks");
 
 
     if (indputFelt.style.display === "none") {
         indputFelt.style.display = "block";  // Gør søgefeltet synligt
         lukKnap.style.display = "block";  // Gør X-knappen synlig
+        soegBoks.style.display = "block";
         soegefeltButton.style.display = "none";
     } else {
         indputFelt.style.display = "none";  // Skjul feltet
         lukKnap.style.display = "none";  // Skjul knappen
         soegefeltButton.style.display = "block";
+        soegBoks.style.display = "none";
         indputFelt.value = ""; //indputfeltet bliver tomt når man lukker søgefeltet ned iegn
         liste.innerHTML = "";  //fjerner søgeresultaterne
     }
