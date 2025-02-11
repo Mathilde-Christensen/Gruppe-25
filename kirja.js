@@ -24,3 +24,11 @@ nextButton.addEventListener("click", function(){ //"Lytter" efter klik på næst
     track.style.transform = 'translateX(-${index * scrollAmount}px)';
 });
 
+prevButton.addEventListener("click", function(){
+    if(index > 0){
+        index--; //reducerer index og tilbage til forrige billederække
+    } else{
+        index = maxIndex; //Så looper vi til sidste billederække
+    }
+    track.style.transform = 'translateX(-${index * scrollAmount}px)';
+});
