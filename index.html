@@ -14,12 +14,22 @@
 </head>
 <body>
 
-    <h1>EVENTYRET<br>STARTER HER</h1>
+    <div class="header">
 
-    <h4>
-        Vi hjælper dig med at planlægge dit næste store rejseeventyr uanset om du drømmer om backpacking, 
-        dykning, surfing, sandstrande eller grupperejse. Rejsen starter her. Er du klar?
-    </h4>
+        <div class="header__menubar">
+
+        </div>
+
+    </div>
+
+    <div class="hero">
+        <h1>EVENTYRET<br>STARTER HER</h1>
+
+        <h4>
+            Vi hjælper dig med at planlægge dit næste store rejseeventyr uanset om du drømmer om backpacking, 
+            dykning, surfing, sandstrande eller grupperejse. Rejsen starter her. Er du klar?
+        </h4>
+    </div>
 
     <h2>Hvad er din drømmerejse?</h2>
 
@@ -32,7 +42,7 @@
     <div class="bugerMenu"></div>
 
     <div id="soegefelt">
-        <button id="soegefeltButton" onclick="soeFeltIndput()">Søg</button>
+        <button id="soegefeltButton" onclick="soeFeltIndput()">SØG</button>
         <button id="lukKnap" onclick="soeFeltIndput()" style="display: none;">x</button>
         <input id="indputFelt" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;" onkeyup="filterLinks()">
         <ul id="soegeResultater"></ul> <!-- tom ul liste som bliver fyldt i js med søgeresultater -->
