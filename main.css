@@ -214,3 +214,79 @@ button {
     color: #FF3700;
 }
 
+
+
+
+
+
+
+/*Alice*/
+body {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.menu-container {
+    position: relative;
+}
+
+#menu-toggle { /* de tre streger*/
+    font-size: 24px;
+    background: #FF3700;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background: #FF3700;
+    padding-top: 20px;
+    transition: left 0.3s ease-in-out;
+}
+
+nav.open {
+    left: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #FF3700;
+    padding: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+li:hover {
+    background: #ee3800; /*hover*/
+}
+
+.sub-menu {
+    display: none;
+    background: #FF3700; /* når man trykker på hover*/
+    padding-left: 20px;
+}
+
+.sub-menu li {
+    background: #FF3700; /* underlister*/
+    font-size: 14px;
+}
+
+.arrow {
+    font-size: 18px;
+}
