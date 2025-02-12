@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 document.addEventListener("DOMContentLoaded", function () {
     const popup = document.getElementById("popup");
-    const openPopupBtn = document.getElementById("openPopup");
+    const openPopupBtn = document.getElementById("skriv-til-os__button"); // Bruger din eksisterende knap
     const closePopupBtn = document.getElementById("closePopup");
 
     // Åbner popup, når brugeren klikker på "Skriv til os"
@@ -68,3 +68,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
