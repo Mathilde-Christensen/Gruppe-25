@@ -605,6 +605,7 @@ textarea {
 .billedeGalleriDrømmerejse-split2 {
     display: flex;
 }
+
 /* 🔹 Styling af popup baggrund */
 .popup {
     display: none; /* Skjult som standard */
@@ -682,4 +683,7 @@ textarea {
         width: 95%;
         padding: 20px;
     }
+}
+.galleri__img {
+    width: 100%;
 }
