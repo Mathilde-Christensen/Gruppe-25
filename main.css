@@ -336,22 +336,19 @@ card:hover {
     background-color: #e6e6e6;
 }
 
-.gallery-container{ /*Container, der skjuler billeder uden for synsfeltet*/
+.gallery-container {
+    width: 100%;
+    overflow: hidden; /* Sørger for, at billederne ikke ryger ud */
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    overflow: hidden;
 }
 
-.gallery-track{
+.gallery-track {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
     transition: transform 0.5s ease-in-out;
-    width: max-content; /* Skal være bred nok til alle billeder */
+    width: 100%;
 }
 
 .gallery-item{
@@ -369,7 +366,6 @@ card:hover {
     margin-top: 30px;
     margin-bottom: 5px;
     border: 4px solid #ffffff;
-    transition: border 0.3s;
 }
 
 .gallery-item img:hover{
@@ -377,14 +373,14 @@ card:hover {
 }
 
 .gallery-name{
-    font-size: 1em;
+    font-size: 0.8em !important;
     font-weight:bold;
     color: #ffffff;
     margin-top: 2px;
 }
 
 .gallery-title{
-    font-size:0.2em;
+    font-size:0.7em !important;
     color: #ffffcc;
     margin-top:0;
 }
