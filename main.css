@@ -641,7 +641,6 @@ textarea {
     position: absolute;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: #FF3700;
     font-family: "Poppins", serif;
     font-weight: 400;
@@ -650,6 +649,55 @@ textarea {
     padding: 1rem;
     font-size: small;
 }
+
+.billedeGallerRiverrafting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem 2rem 2rem 4rem;
+}
+
+.billedeGallerAfrika {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.billedeGallerSydny {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 4rem 2rem 2rem;
+}
+
+.billedeGallerJungle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 2rem 2rem 4rem;
+}
+
+.billedeGallerColombia {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.billedeGallerTokyo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 4rem 2rem 2rem;
+}
+
+.galleriDrømmerejse-textboks {
+    position: absolute;
+}
+
+
 
 /* 🔹 Skjuler popup som standard */
 .popup {
