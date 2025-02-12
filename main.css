@@ -686,7 +686,6 @@ textarea {
 .billedeGallerRiverrafting {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-direction: column;
     padding: 2rem 2rem 2rem 4rem;
 }
@@ -728,7 +727,31 @@ textarea {
 
 .galleriDrømmerejse-textboks {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 1rem;
+    border: #fff solid 2px;
+    height: 150px;
+    width: 300px;
+    margin-top: 17rem;
 }
+
+.galleriDrømmerejse-text {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 1.5em;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.galleriDrømmerejse-pris {
+    text-align: center;
+    padding: 3px;
+}
+
+
 
 
 
@@ -858,3 +881,5 @@ textarea {
         padding: 20px;
     }
 }
+
+
