@@ -71,6 +71,8 @@ button {
     width: 100%;
     z-index: 3;
     /*headeren ligger sig foran videon fra heroen*/
+    display: flex;
+    justify-content: space-between;
 }
 
 .header__logo {
@@ -432,7 +434,8 @@ label {
 }
 
 /* 🔹 Inputfelter 🔹 */
-input, textarea {
+.contact-form-container input,
+.contact-form-container textarea {
     width: 100%;
     padding: 14px;
     margin-top: 5px;
@@ -445,12 +448,14 @@ input, textarea {
 }
 
 /* 🔹 Placeholder-tekst 🔹 */
-input::placeholder, textarea::placeholder {
+.contact-form-container input::placeholder, 
+.contact-form-container textarea::placeholder {
     color: rgba(255, 255, 255, 0.7);
 }
 
 /* 🔹 Hover-effekt på input 🔹 */
-input:focus, textarea:focus {
+.contact-form-container input:focus, 
+.contact-form-container textarea:focus {
     border-color: white;
     outline: none;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
@@ -566,7 +571,10 @@ textarea {
         padding: 20px;
     }
 
-    input, textarea, .dropdown-btn, button {
+    .contact-form-container input,
+    .contact-form-container textarea,
+    .contact-form-container .dropdown-btn,
+    .contact-form-container button {
         font-size: 14px;
         padding: 12px;
     }
