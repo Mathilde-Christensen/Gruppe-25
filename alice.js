@@ -21,6 +21,12 @@ document.addEventListener("DOMContentLoaded", function() {
     menuToggle.addEventListener("click", function() { /**/ 
         menu.classList.toggle("open");
     });
+    
+    document.addEventListener("click", function(event) {
+        if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+            menu.classList.remove("open");
+        }
+    });
 
     menuData.forEach(item => {
         const card = document.createElement("card");
