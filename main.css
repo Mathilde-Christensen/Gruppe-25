@@ -237,7 +237,7 @@ body {
 
 #menu-toggle { /* de tre streger*/
     font-size: 24px;
-    background: #FF3700;
+    background: none;
     color: #ffffff;
     border: none;
     padding: 10px;
