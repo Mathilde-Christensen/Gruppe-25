@@ -342,7 +342,7 @@ card:hover {
 .gallery-track{
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 60px; /* Skal være bred nok til alle billeder */
+    width: 10px; /* Skal være bred nok til alle billeder */
 }
 
 .gallery-track img {
