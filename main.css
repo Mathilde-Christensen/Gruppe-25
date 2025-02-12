@@ -237,7 +237,7 @@ body {
 
 #menu-toggle { /* de tre streger*/
     font-size: 24px;
-    background: #FF3700;
+    background: none;
     color: #ffffff;
     border: none;
     padding: 10px;
@@ -586,4 +586,22 @@ textarea {
         font-size: 14px;
         padding: 12px;
     }
+}
+
+
+/* drømmerejse galleri */
+
+.drømmerejseh2 {
+    color: #FF3700;
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.billedeGalleriDrømmerejse-split1 {
+    display: flex;
+}
+
+.billedeGalleriDrømmerejse-split2 {
+    display: flex;
 }
