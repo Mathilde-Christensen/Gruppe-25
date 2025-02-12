@@ -15,11 +15,11 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
 
     const menuList = document.getElementById("menu-list");
-    const menuKnappen = document.getElementById("menu-knappen");
+    const menuToggle = document.getElementById("menu-toggle");
     const menu = document.getElementById("menu");
 
-    menuKnappen.addEventListener("click", function() { /**/ 
-        menu.classList.knappen("open");
+    menuToggle.addEventListener("click", function() { /**/ 
+        menu.classList.toggle("open");
     });
 
     menuData.forEach(item => {

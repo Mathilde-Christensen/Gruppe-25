@@ -227,7 +227,7 @@ body {
     position: relative;
 }
 
-#menu-knappen { /* de tre streger*/
+#menu-toggle { /* de tre streger*/
     font-size: 24px;
     background: #FF3700;
     color: #ffffff;
