@@ -659,7 +659,7 @@ textarea {
     left: 0;
     width: 100%;
 }
-
+.popup{
     height: 100%;
     background-color: #007bff; /* HELT BLÅ BAGGRUND */
     display: flex;
