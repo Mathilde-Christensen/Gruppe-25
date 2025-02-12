@@ -40,34 +40,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 document.addEventListener("DOMContentLoaded", function () {
-    const popup = document.getElementById("popup");
-    const openPopupBtn = document.getElementById("skriv-til-os__button"); // Bruger din eksisterende knap
+    const openPopupBtn = document.getElementById("openPopup");
     const closePopupBtn = document.getElementById("closePopup");
+    const popup = document.getElementById("popup");
 
-    // Skjuler popup fra start
-    popup.style.display = "none";
-
-    // Åbner popup, når brugeren klikker på "Skriv til os"
+    // Åbn popup
     openPopupBtn.addEventListener("click", function () {
         popup.style.display = "flex";
     });
 
-    // Lukker popup ved klik på "X"
+    // Luk popup
     closePopupBtn.addEventListener("click", function () {
         popup.style.display = "none";
     });
 
-    // Lukker popup, hvis brugeren klikker udenfor den
+    // Luk popup, hvis man klikker udenfor formularen
     window.addEventListener("click", function (event) {
         if (event.target === popup) {
             popup.style.display = "none";
         }
     });
-
-    // Luk popup ved tryk på "Escape"
-    document.addEventListener("keydown", function (event) {
-        if (event.key === "Escape") {
-            popup.style.display = "none";
-        }
-    });
 });
+
