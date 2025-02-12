@@ -302,7 +302,7 @@ card:hover {
     justify-content: center;
     gap: 10px;
     position: relative;
-    width: 90%;
+    width: 92%;
     height: 500px;
     margin: 50px auto;
     background-color: #0073ff;
@@ -336,29 +336,24 @@ card:hover {
     background-color: #e6e6e6;
 }
 
-.gallery-container{ /*Container, der skjuler billeder uden for synsfeltet*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.gallery-container {
     width: 100%;
-    overflow: hidden;
-}
-
-.gallery-track{
+    overflow: hidden; /* Sørger for, at billederne ikke ryger ud af containeren */
+    position: relative;
     display: flex;
-    flex-wrap: nowrap;
-    gap: 20px;
     justify-content: center;
     align-items: center;
-    transition: transform 0.5s ease-in-out;
-    width: max-content; /* Skal være bred nok til alle billeder */
 }
 
-.gallery-item{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.gallery-track {
+    display: flex;
+    width: 100%;
+}
+
+.gallery-item {
+    width: calc(100% / 7); /* Sikrer, at præcis 7 billeder vises */
+    flex: 0 0 auto;
+    text-align:center;
 }
 
 .gallery-item img {
@@ -366,9 +361,9 @@ card:hover {
     height: 100px;
     border-radius: 50px; /* Dette gør billederne runde*/
     object-fit: cover; /* Gør at billederne passer fint i cirklerne */
+    margin-top: 30px;
     margin-bottom: 5px;
     border: 4px solid #ffffff;
-    transition: border 0.3s;
 }
 
 .gallery-item img:hover{
@@ -376,16 +371,22 @@ card:hover {
 }
 
 .gallery-name{
-    font-size: 1em;
+    font-size: 0.9em !important;
+    text-align: center; /* Centrer teksten */
     font-weight:bold;
     color: #ffffff;
     margin-top: 2px;
+    white-space: nowrap;
+    max-width: fit-content; /* Sørger for, at det kun fylder det nødvendige */
+    display: inline-block;
+
 }
 
-.gallery-title{
-    font-size:0.4em;
-    color: #ffffcc;
-    margin-top:0;
+.gallery-title {
+    white-space: nowrap; /* Sørger for at teksten ikke brydes */
+    display: block; /* Sikrer, at teksten opfører sig som en blok */
+    text-align: center; /* Centrer teksten */
+    font-size: 0.7em !important; /* Sørger for at den er mindre end .gallery-name */
 }
 
 #prevButton, #nextButton {
@@ -402,11 +403,13 @@ card:hover {
 }
 
 #prevButton{
-    left: 10px;
+    left: 0px;
+    top:70%;
 }
 
 #nextButton{
-    right: 10px;
+    right: 0px;
+    top:70%;
 }
 
 #nextButton:hover, #prevButton:hover{
@@ -522,6 +525,279 @@ textarea {
     border-radius: 12px;
     width: 500px; /* Standard bredde */
     max-width: 90%;
+
+    background-color: #007bff; /* Blå baggrund */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 85vh; /* Sørger for at popup'en aldrig bliver for høj */
+    overflow-y: auto; /* Tilføjer scrolling hvis den bliver for lang */
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* 🔹 Gør inputfelter og tekstfelter mindre for at spare plads */
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: transparent;
+    color: white;
+}
+
+/* 🔹 Juster knappen for at sikre den ikke fylder for meget */
+.contact-form-container button {
+    font-size: 16px;
+    padding: 12px;
+}
+
+/* 🔹 Sørger for at popup'en er synlig på store skærme */
+@media (min-width: 1024px) {
+    .popup-content {
+        max-height: 80vh; /* Justerer højden for større skærme */
+    }
+}
+
+
+
+
+/* drømmerejse galleri */
+
+.drømmerejseh2 {
+    color: #FF3700;
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.billedeGalleriDrømmerejse-split1 {
+    display: flex;
+}
+
+.billedeGalleriDrømmerejse-split2 {
+    display: flex;
+}
+
+.galleri__img {
+    width: 100%;
+    opacity: 0.6;
+    transition: transform 0.3s ease-in-out;
+}
+
+.galleri__img:hover {
+    transform: scale(1.1);
+}
+
+.seOplevelse {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: #FF3700;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    padding: 1rem;
+    font-size: small;
+    z-index: 1;
+}
+
+.billedeGallerRiverrafting {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5rem 1.5rem 1.5rem 4rem;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.billedeGallerAfrika {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5rem;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.billedeGallerSydny {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5rem 4rem 1.5rem 1.5rem;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.billedeGallerJungle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5rem 1.5rem 1.5rem 4rem;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.billedeGallerColombia {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5rem;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.billedeGallerTokyo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5rem 4rem 1.5rem 1.5rem;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.galleriDrømmerejse-textboks {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 1rem;
+    border: #fff solid 2px;
+    height: 150px;
+    width: 300px;
+    margin-top: 17rem;
+}
+
+.galleriDrømmerejse-text {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 1.5em;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.galleriDrømmerejse-pris {
+    text-align: center;
+    padding: 3px;
+}
+
+/* Find fly biletter*/
+
+.findFlyBiletter {
+    border: #FF3700 solid 3px;
+    height: 350px;
+    width: 1300px;
+    text-align: center;
+    margin: 4rem;
+}
+
+.finfFlyBiletterh2 {
+    color: #FF3700;
+    padding: 4rem 0rem 2rem 0rem;
+}
+
+.findFlyBiletterp {
+    font-weight: 300;
+    padding: 0rem 0rem 2rem 0rem;
+}
+
+.søgEfterFlyButton {
+    color: #fff;
+    background-color: #FF3700;
+    padding: 1rem;
+    font-size: small;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Design din drømmerejse */
+
+.designDinEgenRejse {
+    display: flex;
+    height: 500px;
+    width: 1300px;
+    background-color: #FF3700;
+    color: #ffffff;
+    margin: 4rem;
+    font-weight: 300;
+    font-size: small;
+}
+
+.designDinEgenRejse__img {
+    width: 50%;
+    margin: 2rem 0rem;
+}
+
+.designDinEgenRejse__button {
+    color: #FF3700;
+    margin: 1rem 0rem;
+    font-size: small;
+    padding: 1rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.designDinEgenRejse__h2 {
+    margin: 4rem 0rem 2rem 0rem;
+}
+
+.designDinEgenRejse__p1 {
+    margin: 1rem 2rem 1rem 0rem;
+}
+
+.designDinEgenRejse__p2 {
+    padding: 1rem 4rem 1rem 0rem;
+}
+
+.designDinEgenRejse__p3 {
+    padding: 1rem 4rem 1rem 0rem;
+}
+
+/* 🔹 Skjuler popup som standard */
+.popup {
+    display: none; /* Sørger for, at popup'en er skjult fra start */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.popup{
+    height: 100%;
+    background-color: #007bff; /* HELT BLÅ BAGGRUND */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* 🔹 Styling af popup baggrund - FULD SKÆRM MED BLÅ BAGGRUND */
+.popup {
+    display: none; /* Skjult som standard */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #007bff; /* HELT BLÅ BAGGRUND */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* 🔹 Styling af popup-indhold */
+.popup-content {
+    background-color: #007bff; /* Samme blå farve */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px; /* Gør den bredere */
+    width: 90%;
     text-align: center;
     color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -692,4 +968,68 @@ textarea {
         width: 95%;
         padding: 20px;
     }
+}
+
+footer {
+    background-color: red !important; /* For at teste om den er der */
+    height: 300px !important; /* Sørger for, at den fylder noget */
+    display: block !important;
+    visibility: visible !important;
+}
+
+/* Øverste footer (Grå sektion) */
+.footer-top {
+    background-color: #f5f5f5; /* Beige/grå baggrund */
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h3 {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.footer-column p {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.footer-column a {
+    color: #d80000; /* Rød farve til links */
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-logos img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+/* Nederste footer (Orange sektion) */
+.footer-bottom {
+    background-color: #FF3700;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
 }
