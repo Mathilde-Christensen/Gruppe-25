@@ -66,7 +66,6 @@ button {
 
 /* menubar style*/
 .header {
-    position: fixed;
     top: 0;
     width: 100%;
     z-index: 3;
@@ -106,7 +105,6 @@ button {
     grid-row: 1 / -1;
     grid-column: 1 / -1;
     opacity: 0.8;
-    /*50% gennemsigtigt */
 }
 
 .hero__text {
