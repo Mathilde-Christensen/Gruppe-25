@@ -579,3 +579,21 @@ textarea {
         padding: 12px;
     }
 }
+
+
+/* drømmerejse galleri */
+
+.drømmerejseh2 {
+    color: #FF3700;
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.billedeGalleriDrømmerejse-split1 {
+    display: flex;
+}
+
+.billedeGalleriDrømmerejse-split2 {
+    display: flex;
+}
