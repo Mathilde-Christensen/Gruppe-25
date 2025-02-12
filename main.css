@@ -319,7 +319,8 @@ card:hover {
     text-align: center;
     padding-right: 60px;
     padding-left:60px;
-    font-size: 0.8em;
+    font-size: 0.9em;
+    gap: 20px;
 }
 
 #skriv-til-os__button{
@@ -328,6 +329,7 @@ card:hover {
     padding: 0.8rem 1.2rem;
     font-size: 0.8em;
     margin-top: 20px;
+    box-shadow: 0px 5px 10px #105fbf;
 }
 
 #skriv-til-os__button:hover{
@@ -369,8 +371,7 @@ card:hover {
     padding: 10px 15px;
     font-size: 24px;
     cursor: pointer;
-    border-radius: 50%;
-    transition: background-color 0.3s;
+    border-radius: 50%; 
 }
 
 #prevButton{
