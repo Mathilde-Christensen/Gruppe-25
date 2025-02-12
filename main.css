@@ -633,6 +633,10 @@ textarea {
     display: flex;
 }
 
+.galleri__img {
+    width: 100%;
+}
+
 .seOplevelse {
     position: absolute;
     display: flex;
