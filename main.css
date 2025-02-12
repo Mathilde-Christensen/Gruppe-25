@@ -585,35 +585,57 @@ textarea {
 .dropdown-menu li:last-child {
     border-bottom: none;
 }
+/* 🔹 Standard styling for større skærme */
+.contact-form-container {
+    width: 80%;
+    max-width: 600px; /* Forhindrer at den bliver for bred */
+    padding: 25px;
+}
 
-/* 🔹 Gør siden mindre "zoomet" 🔹 */
+/* 🔹 Medium skærme (tablets) */
 @media (max-width: 1024px) {
     .contact-form-container {
-        width: 80%; /* Gør den bredere på store skærme */
-        padding: 25px;
+        width: 85%;
+        padding: 20px;
     }
 }
 
+/* 🔹 Små skærme (mobil & tablets) */
 @media (max-width: 768px) {
     .contact-form-container {
-        width: 90%; /* Tilpas til tablets */
+        width: 90%;
+        max-width: 500px;
+        padding: 18px;
     }
 }
 
+/* 🔹 Meget små skærme (mobil) */
 @media (max-width: 480px) {
     .contact-form-container {
         width: 95%;
-        padding: 20px;
+        max-width: 400px; /* Begrænser bredde, så den ikke bliver for stor */
+        padding: 15px;
     }
 
+    /* Justerer input, knapper og dropdown */
     .contact-form-container input,
     .contact-form-container textarea,
     .contact-form-container .dropdown-btn,
     .contact-form-container button {
         font-size: 14px;
-        padding: 12px;
+        padding: 10px;
+    }
+
+    /* Sørger for at teksten ikke bliver for stor på små skærme */
+    .contact-form-container h1 {
+        font-size: 20px;
+    }
+
+    .contact-form-container p {
+        font-size: 14px;
     }
 }
+
 
 
 /* drømmerejse galleri */
