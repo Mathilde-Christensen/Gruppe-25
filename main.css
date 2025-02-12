@@ -763,28 +763,20 @@ textarea {
     padding: 1rem 4rem 1rem 0rem;
 }
 
-/* 🔹 Reset */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-}
-
-/* 🔹 Popup-overlay (fuldskærm) */
+/* 🔹 Skjul popup som standard */
 .popup {
-    display: none; /* Skjult fra start */
+    display: none; /* Sørger for, at den ikke vises ved siden start */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 123, 255, 0.95); /* Blå baggrund */
+    background-color: rgba(0, 123, 255, 0.95); /* Blå baggrund med gennemsigtighed */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    padding: 20px;
+    padding: 20px; /* Lidt luft rundt om formularen */
 }
 
 /* 🔹 Popup-indhold */
@@ -922,17 +914,12 @@ textarea {
         width: 95%;
         padding: 20px;
     }
-
-    .input-grid {
-        grid-template-columns: 1fr; /* Gør felterne enkeltstående på mobil */
-    }
 }
 
 
     .input-grid {
         grid-template-columns: 1fr; /* Skifter til én kolonne på mindre skærme */
     }
-
 
 
 footer {
@@ -994,4 +981,5 @@ footer {
     margin: 0 15px;
     text-decoration: none;
 }
+
 
