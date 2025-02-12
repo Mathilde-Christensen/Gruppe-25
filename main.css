@@ -337,28 +337,55 @@ card:hover {
 }
 
 .gallery-container{ /*Container, der skjuler billeder uden for synsfeltet*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     overflow: hidden;
 }
 
 .gallery-track{
     display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
     transition: transform 0.5s ease-in-out;
-    width: 10px; /* Skal være bred nok til alle billeder */
+    width: max-content; /* Skal være bred nok til alle billeder */
 }
 
-.gallery-track img {
+.gallery-item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery-item img {
     width: 100px;
     height: 100px;
     border-radius: 50px; /* Dette gør billederne runde*/
     object-fit: cover; /* Gør at billederne passer fint i cirklerne */
-    margin: 45px;
+    margin-bottom: 5px;
     border: 4px solid #ffffff;
     transition: border 0.3s;
 }
 
-.gallery-track img:hover{
+.gallery-item img:hover{
     border: 4px solid transparent;
+}
+
+.gallery-name{
+    font-size: 1em;
+    font-weight:bold;
+    color: #ffffff;
+    margin-top: 2px;
+}
+
+.gallery-title{
+    font-size:0.4em;
+    color: #ffffcc;
+    margin-top:0;
 }
 
 #prevButton, #nextButton {
