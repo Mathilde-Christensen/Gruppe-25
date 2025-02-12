@@ -302,7 +302,7 @@ card:hover {
     justify-content: center;
     gap: 10px;
     position: relative;
-    width: 90%;
+    width: 92%;
     height: 500px;
     margin: 50px auto;
     background-color: #0073ff;
@@ -338,7 +338,7 @@ card:hover {
 
 .gallery-container {
     width: 100%;
-    overflow: hidden; /* Sørger for, at billederne ikke ryger ud */
+    overflow: hidden; /* Sørger for, at billederne ikke ryger ud af containeren */
     position: relative;
     display: flex;
     justify-content: center;
@@ -347,7 +347,6 @@ card:hover {
 
 .gallery-track {
     display: flex;
-    transition: transform 0.5s ease-in-out;
     width: 100%;
 }
 
@@ -373,7 +372,7 @@ card:hover {
 
 .gallery-name{
     font-size: 0.8em !important;
-    display: block; /* Sikrer, at teksten opfører sig som en blok */
+    display: block; /* Sikrer, at navne-teksten opfører sig som en blok */
     text-align: center; /* Centrer teksten */
     font-weight:bold;
     color: #ffffff;
@@ -384,7 +383,7 @@ card:hover {
     white-space: nowrap; /* Sørger for at teksten ikke brydes */
     display: block; /* Sikrer, at teksten opfører sig som en blok */
     text-align: center; /* Centrer teksten */
-    font-size: 0.5em !important; /* Sørger for at den er mindre end .gallery-name */
+    font-size: 0.7em !important; /* Sørger for at den er mindre end .gallery-name */
 }
 
 #prevButton, #nextButton {
@@ -401,11 +400,13 @@ card:hover {
 }
 
 #prevButton{
-    left: 10px;
+    left: 0px;
+    top:70%;
 }
 
 #nextButton{
-    right: 10px;
+    right: 0px;
+    top:70%;
 }
 
 #nextButton:hover, #prevButton:hover{
