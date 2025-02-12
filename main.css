@@ -604,3 +604,7 @@ textarea {
 .billedeGalleriDrømmerejse-split2 {
     display: flex;
 }
+
+.galleri__img {
+    width: 100%;
+}
