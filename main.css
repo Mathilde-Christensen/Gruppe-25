@@ -262,7 +262,7 @@ ul {
     padding: 0;
 }
 
-li {
+card {
     background: #FF3700;
     padding: 15px;
     color: #ffffff;
@@ -273,7 +273,7 @@ li {
     border-bottom: 1px solid #ffffff;
 }
 
-li:hover {
+card:hover {
     background: #ee3800; /*hover*/
 }
 
@@ -325,6 +325,10 @@ li:hover {
     background-color: #ffffff;
     color:#0073ff;
     margin: 2rem 1rem 15rem 1rem;
+}
+
+#skriv-til-os__button:hover{
+    background-color: #e6e6e6;
 }
 
 .gallery-container{ /*Container, der skjuler billeder uden for synsfeltet*/

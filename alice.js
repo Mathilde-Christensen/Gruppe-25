@@ -23,31 +23,31 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     menuData.forEach(item => {
-        const li = document.createElement("li");
-        li.textContent = item.title;
+        const card = document.createElement("card");
+        card.textContent = item.title;
 
         if (item.subItems.length > 0) {
             const arrow = document.createElement("span");
             arrow.textContent = "▼";
             arrow.classList.add("arrow");
-            li.appendChild(arrow);
+            card.appendChild(arrow);
 
             const subMenu = document.createElement("ul");
             subMenu.classList.add("sub-menu");
 
             item.subItems.forEach(subItem => {
-                const subLi = document.createElement("li");
-                subLi.textContent = subItem;
-                subMenu.appendChild(subLi);
+                const subCard = document.createElement("card");
+                subCard.textContent = subItem;
+                subMenu.appendChild(subCard);
             });
 
-            li.appendChild(subMenu);
+            card.appendChild(subMenu);
 
-            li.addEventListener("click", function() {
+            card.addEventListener("click", function() {
                 subMenu.style.display = subMenu.style.display === "block" ? "none" : "block";
             });
         }
 
-        menuList.appendChild(li);
+        menuList.appendChild(card);
     });
 });
