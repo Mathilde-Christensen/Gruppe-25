@@ -592,49 +592,63 @@ textarea {
     padding: 25px;
 }
 
-/* 🔹 Medium skærme (tablets) */
-@media (max-width: 1024px) {
-    .contact-form-container {
-        width: 85%;
-        padding: 20px;
+/* 🔹 Gør popup'en responsiv og synlig på skærmen */
+.popup {
+    display: none; /* Skjult fra start */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #007bff; /* Blå baggrund */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: auto; /* Sørger for at der kan scrolles hvis nødvendigt */
+}
+
+/* 🔹 Gør popup-indholdet mindre, så hele formularen passer */
+.popup-content {
+    background-color: #007bff; /* Blå baggrund */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 85vh; /* Sørger for at popup'en aldrig bliver for høj */
+    overflow-y: auto; /* Tilføjer scrolling hvis den bliver for lang */
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* 🔹 Gør inputfelter og tekstfelter mindre for at spare plads */
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: transparent;
+    color: white;
+}
+
+/* 🔹 Juster knappen for at sikre den ikke fylder for meget */
+.contact-form-container button {
+    font-size: 16px;
+    padding: 12px;
+}
+
+/* 🔹 Sørger for at popup'en er synlig på store skærme */
+@media (min-width: 1024px) {
+    .popup-content {
+        max-height: 80vh; /* Justerer højden for større skærme */
     }
 }
 
-/* 🔹 Små skærme (mobil & tablets) */
-@media (max-width: 768px) {
-    .contact-form-container {
-        width: 90%;
-        max-width: 500px;
-        padding: 18px;
-    }
-}
-
-/* 🔹 Meget små skærme (mobil) */
-@media (max-width: 480px) {
-    .contact-form-container {
-        width: 95%;
-        max-width: 400px; /* Begrænser bredde, så den ikke bliver for stor */
-        padding: 15px;
-    }
-
-    /* Justerer input, knapper og dropdown */
-    .contact-form-container input,
-    .contact-form-container textarea,
-    .contact-form-container .dropdown-btn,
-    .contact-form-container button {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    /* Sørger for at teksten ikke bliver for stor på små skærme */
-    .contact-form-container h1 {
-        font-size: 20px;
-    }
-
-    .contact-form-container p {
-        font-size: 14px;
-    }
-}
 
 
 
