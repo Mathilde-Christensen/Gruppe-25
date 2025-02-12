@@ -501,98 +501,7 @@ textarea {
     height: 120px;
     resize: none;
 }
-
-/* 🔹 Send-knap 🔹 */
-#dropdownBtn {
-    width: 100%;
-    padding: 14px;
-    margin-top: 20px;
-    background-color: white;
-    border: none;
-    border-radius: 6px;
-    color: #007bff; /* Blå tekst for kontrast */
-    font-size: 18px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-/* 🔹 Hover-effekt på knappen 🔹 */
-#dropdownBtn:hover {
-    background-color: #e6e6e6;
-}
-
-/* 🔹 Dropdown-container 🔹 */
-.dropdown {
-    position: relative;
-    text-align: left;
-    margin-top: 10px;
-}
-
-/* 🔹 Dropdown-knap (Gør den hvid) 🔹 */
-.dropdown-btn {
-    background-color: white; /* Hvid baggrund */
-    color: #007bff; /* Blå tekst */
-    padding: 14px;
-    border: 2px solid white;
-    cursor: pointer;
-    font-size: 16px;
-    width: 100%;
-    text-align: left;
-    border-radius: 6px;
-    transition: 0.3s;
-}
-
-/* 🔹 Hover-effekt 🔹 */
-.dropdown-btn:hover {
-    background-color: #e6e6e6;
-}
-
-/* 🔹 Dropdown-menu 🔹 */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #007bff; /* Samme blå som resten */
-    width: 100%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-    margin-top: 5px;
-    list-style: none;
-    padding: 0;
-    z-index: 10;
-}
-
-/* 🔹 Når dropdown-menu vises 🔹 */
-.dropdown.show .dropdown-menu {
-    display: block;
-}
-
-/* 🔹 Dropdown-elementer 🔹 */
-.dropdown-menu li {
-    padding: 14px;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    transition: 0.3s;
-    color: white; /* Hvid tekst */
-}
-
-/* 🔹 Hover-effekt på dropdown-elementer 🔹 */
-.dropdown-menu li:hover {
-    background-color: #0056d2;
-}
-
-/* 🔹 Skjuler den sidste border 🔹 */
-.dropdown-menu li:last-child {
-    border-bottom: none;
-}
-/* 🔹 Standard styling for større skærme */
-.contact-form-container {
-    width: 80%;
-    max-width: 600px; /* Forhindrer at den bliver for bred */
-    padding: 25px;
-}
-
-/* 🔹 Gør popup'en responsiv og synlig på skærmen */
+/* 🔹 Gør popup til en overlay der fylder hele skærmen */
 .popup {
     display: none; /* Skjult fra start */
     position: fixed;
@@ -600,132 +509,19 @@ textarea {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #007bff; /* Blå baggrund */
+    background-color: rgba(0, 123, 255, 0.95); /* Blå baggrund med let transparens */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    overflow: auto; /* Sørger for at der kan scrolles hvis nødvendigt */
 }
-
-/* 🔹 Gør popup-indholdet mindre, så hele formularen passer */
+/* 🔹 Popup-indholdet (Kontaktformular) */
 .popup-content {
-    background-color: #007bff; /* Blå baggrund */
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    width: 90%;
-    max-height: 85vh; /* Sørger for at popup'en aldrig bliver for høj */
-    overflow-y: auto; /* Tilføjer scrolling hvis den bliver for lang */
-    text-align: center;
-    color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
-}
-
-/* 🔹 Gør inputfelter og tekstfelter mindre for at spare plads */
-.contact-form-container input,
-.contact-form-container textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 2px solid white;
-    border-radius: 6px;
-    font-size: 14px;
-    background-color: transparent;
-    color: white;
-}
-
-/* 🔹 Juster knappen for at sikre den ikke fylder for meget */
-.contact-form-container button {
-    font-size: 16px;
-    padding: 12px;
-}
-
-/* 🔹 Sørger for at popup'en er synlig på store skærme */
-@media (min-width: 1024px) {
-    .popup-content {
-        max-height: 80vh; /* Justerer højden for større skærme */
-    }
-}
-
-
-
-
-/* drømmerejse galleri */
-
-.drømmerejseh2 {
-    color: #FF3700;
-    display: flex;
-    justify-content: center;
-    padding: 4rem;
-}
-
-.billedeGalleriDrømmerejse-split1 {
-    display: flex;
-}
-
-.billedeGalleriDrømmerejse-split2 {
-    display: flex;
-}
-
-.galleri__img {
-    width: 100%;
-}
-
-.seOplevelse {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FF3700;
-    font-family: "Poppins", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #fff;
-    padding: 1rem;
-    font-size: small;
-}
-
-/* 🔹 Skjuler popup som standard */
-.popup {
-    display: none; /* Sørger for, at popup'en er skjult fra start */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-.popup{
-    height: 100%;
-    background-color: #007bff; /* HELT BLÅ BAGGRUND */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-/* 🔹 Styling af popup baggrund - FULD SKÆRM MED BLÅ BAGGRUND */
-.popup {
-    display: none; /* Skjult som standard */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #007bff; /* HELT BLÅ BAGGRUND */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-/* 🔹 Styling af popup-indhold */
-.popup-content {
-    background-color: #007bff; /* Samme blå farve */
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 600px; /* Gør den bredere */
-    width: 90%;
+    background-color: #007bff; /* Kilroy blå */
+    padding: 40px;
+    border-radius: 12px;
+    width: 500px; /* Standard bredde */
+    max-width: 90%;
     text-align: center;
     color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -735,8 +531,8 @@ textarea {
 /* 🔹 Luk-knap (X) */
 .close {
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 15px;
+    right: 20px;
     font-size: 24px;
     cursor: pointer;
     color: white;
@@ -747,14 +543,98 @@ textarea {
     color: #ccc;
 }
 
-/* 🔹 Formular-container */
-.contact-form-container {
-    background-color: transparent; /* Ingen baggrund i boksen */
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+/* 🔹 Styling af inputfelter */
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: transparent;
     color: white;
-    box-sizing: border-box;
+}
+
+/* 🔹 Placeholder-tekst */
+.contact-form-container input::placeholder,
+.contact-form-container textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 🔹 Knapper */
+.contact-form-container button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    color: #007bff;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-form-container button:hover {
+    background-color: #e6e6e6;
+}
+
+/* 🔹 Dropdown-knap */
+.dropdown-btn {
+    background-color: white;
+    color: #007bff;
+    padding: 14px;
+    border: 2px solid white;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+/* 🔹 Dropdown-menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #007bff;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    list-style: none;
+    padding: 0;
+    z-index: 10;
+}
+
+.dropdown.show .dropdown-menu {
+    display: block;
+}
+
+/* 🔹 Responsiv styling */
+@media (max-width: 768px) {
+    .popup-content {
+        width: 90%;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .popup-content {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .contact-form-container input,
+    .contact-form-container textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .contact-form-container h1 {
+        font-size: 20px;
+    }
 }
 
 /* 🔹 Inputfelter */

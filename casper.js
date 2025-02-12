@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const openPopupBtn = document.getElementById("skriv-til-os__button"); // Bruger din eksisterende knap
     const closePopupBtn = document.getElementById("closePopup");
 
-    // Skjul popup ved start (hvis den stadig er synlig)
+    // Skjuler popup fra start
     popup.style.display = "none";
 
     // Åbner popup, når brugeren klikker på "Skriv til os"
@@ -71,5 +71,3 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
-
