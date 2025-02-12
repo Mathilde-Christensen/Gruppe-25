@@ -632,6 +632,21 @@ textarea {
 .billedeGalleriDrømmerejse-split2 {
     display: flex;
 }
+/* 🔹 Skjuler popup som standard */
+.popup {
+    display: none; /* Sørger for, at popup'en er skjult fra start */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #007bff; /* HELT BLÅ BAGGRUND */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
 /* 🔹 Styling af popup baggrund - FULD SKÆRM MED BLÅ BAGGRUND */
 .popup {
     display: none; /* Skjult som standard */
