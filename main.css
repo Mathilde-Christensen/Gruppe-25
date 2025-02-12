@@ -351,11 +351,10 @@ card:hover {
     width: 100%;
 }
 
-.gallery-item{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.gallery-item {
+    width: calc(100% / 7); /* Sikrer, at præcis 7 billeder vises */
+    flex: 0 0 auto;
+    text-align:center;
 }
 
 .gallery-item img {
@@ -374,15 +373,18 @@ card:hover {
 
 .gallery-name{
     font-size: 0.8em !important;
+    display: block; /* Sikrer, at teksten opfører sig som en blok */
+    text-align: center; /* Centrer teksten */
     font-weight:bold;
     color: #ffffff;
     margin-top: 2px;
 }
 
-.gallery-title{
-    font-size:0.7em !important;
-    color: #ffffcc;
-    margin-top:0;
+.gallery-title {
+    white-space: nowrap; /* Sørger for at teksten ikke brydes */
+    display: block; /* Sikrer, at teksten opfører sig som en blok */
+    text-align: center; /* Centrer teksten */
+    font-size: 0.5em !important; /* Sørger for at den er mindre end .gallery-name */
 }
 
 #prevButton, #nextButton {
