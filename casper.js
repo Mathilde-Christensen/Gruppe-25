@@ -60,5 +60,30 @@ document.addEventListener("DOMContentLoaded", function () {
             popup.style.display = "none";
         }
     });
+
+    // Dropdown-menu funktionalitet
+    const dropdownBtn = document.getElementById("dropdownBtn");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+
+    dropdownBtn.addEventListener("click", function (event) {
+        event.stopPropagation(); // Stop klik fra at lukke dropdown
+        dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+    });
+
+    // Luk dropdown, hvis der klikkes udenfor
+    document.addEventListener("click", function (event) {
+        if (!dropdownBtn.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.style.display = "none";
+        }
+    });
+
+    // Vælg dropdown-element
+    dropdownMenu.addEventListener("click", function (event) {
+        if (event.target.tagName === "LI") {
+            dropdownBtn.textContent = event.target.textContent + " ▼";
+            dropdownMenu.style.display = "none";
+        }
+    });
 });
+
 
