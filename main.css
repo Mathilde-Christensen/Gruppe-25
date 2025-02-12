@@ -746,7 +746,7 @@ textarea {
 }
 
 /* 🔹 Send-knap */
-button {
+.popup-content button {
     width: 100%;
     padding: 14px;
     margin-top: 20px;
@@ -761,7 +761,8 @@ button {
 }
 
 /* 🔹 Hover-effekt på knappen */
-button:hover {
+.popup-content button
+.popup-content :hover {
     background-color: #e6e6e6;
 }
 
