@@ -371,7 +371,7 @@ li:hover {
  
 
 /* 🔹 Generel styling 🔹 */
-body {
+.udfyldningformular {
     font-family: Arial, sans-serif;
     background-color: #007bff; /* Samme blå farve overalt */
     margin: 0;
