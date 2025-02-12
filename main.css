@@ -106,7 +106,7 @@ button {
     grid-row: 1 / -1;
     grid-column: 1 / -1;
     opacity: 0.8;
-    /*50% gennemsigtigt */
+
 }
 
 .hero__text {
@@ -159,6 +159,8 @@ button {
     margin-left: auto;
 }
 
+
+
 #lukKnap {
     background:none;
     font-family: "Poppins", serif;
@@ -177,12 +179,16 @@ button {
     margin: auto;
 }
 
+#indputFelt:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 #soegBoks {
-    border: 0rem;
     border: 0rem;
     background-color: #fff;
     width: 100vw;
-    height: auto;  
+    height: 10vw;  
 }
 
 #lukKnap {
@@ -315,7 +321,7 @@ card:hover {
     font-size: 0.8em;
 }
 
-#skriv-til-os__button {
+.skriv-til-os__button{
     background-color: #ffffff;
     color:#0073ff;
     margin: 2rem 1rem 15rem 1rem;
@@ -368,6 +374,7 @@ card:hover {
     background-color: #00000080;
     background-color: #808080;
 }
+ 
 
 /* 🔹 Generel styling 🔹 */
 .udfyldningformular {
