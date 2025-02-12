@@ -159,6 +159,8 @@ button {
     margin-left: auto;
 }
 
+
+
 #lukKnap {
     background:none;
     font-family: "Poppins", serif;
@@ -177,12 +179,16 @@ button {
     margin: auto;
 }
 
+#indputFelt:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 #soegBoks {
-    border: 0rem;
     border: 0rem;
     background-color: #fff;
     width: 100vw;
-    height: auto;  
+    height: 10vw;  
 }
 
 #lukKnap {

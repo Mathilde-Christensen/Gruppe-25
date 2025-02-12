@@ -27,6 +27,7 @@ let soegResultater = [
     { displayName: "Europa", link: "europa.html" },
     { displayName: "Nordamerika", link: "nordamerika.html" },
     { displayName: "Sydamerika", link: "sydamerika.html" },
+    { displayName: "Australien", link: "australien.html" },
     { displayName: "Asien", link: "asien.html" },
     { displayName: "Oceanien", link: "oceanien.html" },
     { displayName: "Solorejser", link: "soloRejser.html" },
