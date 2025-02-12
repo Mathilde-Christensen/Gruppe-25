@@ -327,6 +327,10 @@ card:hover {
     margin: 2rem 1rem 15rem 1rem;
 }
 
+#skriv-til-os__button:hover{
+    background-color: #e6e6e6;
+}
+
 .gallery-container{ /*Container, der skjuler billeder uden for synsfeltet*/
     width: 100%;
     overflow: hidden;
