@@ -397,7 +397,10 @@ card:hover {
     align-items: center;
     min-height: 100vh; /* Sikrer, at siden ikke virker for zoomet */
 }
-
+.contact-form-container textarea {
+    font-family: inherit !important;
+    font-size: 16px;
+}
 /* 🔹 Formular-container 🔹 */
 .contact-form-container {
     background-color: #007bff; /* Samme blå som baggrunden */
