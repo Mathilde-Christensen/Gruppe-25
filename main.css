@@ -732,6 +732,7 @@ textarea {
 
 .galleriDrømmerejse-textboks {
     position: absolute;
+    display: flex;
 }
 
 
