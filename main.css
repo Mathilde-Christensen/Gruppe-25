@@ -337,28 +337,55 @@ card:hover {
 }
 
 .gallery-container{ /*Container, der skjuler billeder uden for synsfeltet*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     overflow: hidden;
 }
 
 .gallery-track{
     display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
     transition: transform 0.5s ease-in-out;
-    width: 10px; /* Skal være bred nok til alle billeder */
+    width: max-content; /* Skal være bred nok til alle billeder */
 }
 
-.gallery-track img {
+.gallery-item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery-item img {
     width: 100px;
     height: 100px;
     border-radius: 50px; /* Dette gør billederne runde*/
     object-fit: cover; /* Gør at billederne passer fint i cirklerne */
-    margin: 45px;
+    margin-bottom: 5px;
     border: 4px solid #ffffff;
     transition: border 0.3s;
 }
 
-.gallery-track img:hover{
+.gallery-item img:hover{
     border: 4px solid transparent;
+}
+
+.gallery-name{
+    font-size: 1em;
+    font-weight:bold;
+    color: #ffffff;
+    margin-top: 2px;
+}
+
+.gallery-title{
+    font-size:0.4em;
+    color: #ffffcc;
+    margin-top:0;
 }
 
 #prevButton, #nextButton {
@@ -606,10 +633,6 @@ textarea {
     display: flex;
 }
 
-.galleri__img {
-    width: 100%;
-}
-
 .seOplevelse {
     position: absolute;
     display: flex;
@@ -622,4 +645,130 @@ textarea {
     color: #fff;
     padding: 1rem;
     font-size: small;
+}
+
+/* 🔹 Skjuler popup som standard */
+.popup {
+    display: none; /* Sørger for, at popup'en er skjult fra start */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+    height: 100%;
+    background-color: #007bff; /* HELT BLÅ BAGGRUND */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* 🔹 Styling af popup baggrund - FULD SKÆRM MED BLÅ BAGGRUND */
+.popup {
+    display: none; /* Skjult som standard */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #007bff; /* HELT BLÅ BAGGRUND */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* 🔹 Styling af popup-indhold */
+.popup-content {
+    background-color: #007bff; /* Samme blå farve */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px; /* Gør den bredere */
+    width: 90%;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* 🔹 Luk-knap (X) */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.close:hover {
+    color: #ccc;
+}
+
+/* 🔹 Formular-container */
+.contact-form-container {
+    background-color: transparent; /* Ingen baggrund i boksen */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+/* 🔹 Inputfelter */
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: transparent; /* Transparent baggrund */
+    color: white; /* Hvid tekst */
+    box-sizing: border-box;
+}
+
+/* 🔹 Placeholder-tekst */
+.contact-form-container input::placeholder,
+.contact-form-container textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 🔹 Hover-effekt på input */
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+    border-color: white;
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* 🔹 Send-knap */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    color: #007bff; /* Blå tekst for kontrast */
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* 🔹 Hover-effekt på knappen */
+button:hover {
+    background-color: #e6e6e6;
+}
+
+/* 🔹 Mobilvenlig popup */
+@media (max-width: 768px) {
+    .popup-content {
+        width: 95%;
+        padding: 20px;
+    }
 }
