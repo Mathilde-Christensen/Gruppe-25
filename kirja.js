@@ -28,7 +28,7 @@ function animateScroll(targetIndex) {
     index = targetIndex;
 }
 
-// Funktion til at scrolle
+// Funktion til at å pilene til at scrolle
 function scrollGallery(direction) {
     let newIndex = index + direction;
     

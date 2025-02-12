@@ -371,12 +371,15 @@ card:hover {
 }
 
 .gallery-name{
-    font-size: 0.8em !important;
-    display: block; /* Sikrer, at navne-teksten opfører sig som en blok */
+    font-size: 0.9em !important;
     text-align: center; /* Centrer teksten */
     font-weight:bold;
     color: #ffffff;
     margin-top: 2px;
+    white-space: nowrap;
+    max-width: fit-content; /* Sørger for, at det kun fylder det nødvendige */
+    display: inline-block;
+
 }
 
 .gallery-title {
