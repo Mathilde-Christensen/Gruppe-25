@@ -759,24 +759,7 @@ textarea {
     padding: 1rem 4rem 1rem 0rem;
 }
 
-/* 🔹 Skjuler popup som standard */
-.popup {
-    display: none; /* Sørger for, at popup'en er skjult fra start */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-.popup{
-    height: 100%;
-    background-color: #007bff; /* HELT BLÅ BAGGRUND */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-/* 🔹 Styling af popup baggrund - FULD SKÆRM MED BLÅ BAGGRUND */
+/* 🔹 Popup-overlay (fylder hele skærmen) */
 .popup {
     display: none; /* Skjult som standard */
     position: fixed;
@@ -784,24 +767,128 @@ textarea {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #007bff; /* HELT BLÅ BAGGRUND */
+    background-color: rgba(0, 123, 255, 0.95); /* Blå baggrund med let gennemsigtighed */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
+    padding: 20px; /* Sikrer, at formularen har lidt plads omkring sig */
 }
 
-/* 🔹 Styling af popup-indhold */
+/* 🔹 Popup-indhold (centreret & kompakt) */
 .popup-content {
-    background-color: #007bff; /* Samme blå farve */
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 600px; /* Gør den bredere */
-    width: 90%;
+    background-color: #007bff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 500px;
+    max-width: 90%;
+    max-height: 95vh; /* Sikrer, at formularen aldrig bliver højere end skærmen */
     text-align: center;
     color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Fjerner unødvendig scrolling */
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 🔹 Scroll kun indeni formularen hvis nødvendigt */
+.contact-form-container {
+    max-height: 85vh; /* Forhindrer, at formularen bliver for stor */
+    overflow-y: auto; /* Tilføjer scroll indenfor formularen hvis den er for lang */
+}
+
+/* 🔹 Luk-knap (X) */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.close:hover {
+    color: #ccc;
+}
+
+/* 🔹 Inputfelter og tekstfelter */
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: transparent;
+    color: white;
+}
+
+/* 🔹 Placeholder-tekst */
+.contact-form-container input::placeholder,
+.contact-form-container textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 🔹 Send-knap */
+.contact-form-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    color: #007bff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-form-container button:hover {
+    background-color: #e6e6e6;
+}
+
+/* 🔹 Justering for store skærme */
+@media (min-width: 1024px) {
+    .popup-content {
+        max-height: 90vh;
+    }
+}
+
+/* 🔹 Justering for små skærme */
+@media (max-width: 768px) {
+    .popup-content {
+        width: 90%;
+        max-height: 90vh;
+        padding: 20px;
+    }
+
+    .contact-form-container {
+        max-height: 75vh;
+    }
+}
+
+/* 🔹 Justering for meget små skærme */
+@media (max-width: 480px) {
+    .popup-content {
+        width: 95%;
+        max-height: 85vh;
+        padding: 15px;
+    }
+
+    .contact-form-container {
+        max-height: 70vh;
+    }
+
+    .contact-form-container input,
+    .contact-form-container textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
 }
 
 /* 🔹 Luk-knap (X) */
