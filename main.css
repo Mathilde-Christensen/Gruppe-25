@@ -672,6 +672,11 @@ textarea {
 
 .galleri__img {
     width: 100%;
+    opacity: 0.8;
+}
+
+.galleri__img:hover {
+    transform: scale(1.1);
 }
 
 .seOplevelse {
@@ -685,48 +690,55 @@ textarea {
     color: #fff;
     padding: 1rem;
     font-size: small;
+    z-index: 1;
 }
 
 .billedeGallerRiverrafting {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2rem 2rem 2rem 4rem;
+    margin: 2rem 2rem 2rem 4rem;
+    background-color: #000;
 }
 
 .billedeGallerAfrika {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2rem;
+    margin: 2rem;
+    background-color: #000;
 }
 
 .billedeGallerSydny {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2rem 4rem 2rem 2rem;
+    margin: 2rem 4rem 2rem 2rem;
+    background-color: #000;
 }
 
 .billedeGallerJungle {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2rem 2rem 2rem 4rem;
+    margin: 2rem 2rem 2rem 4rem;
+    background-color: #000;
 }
 
 .billedeGallerColombia {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2rem;
+    margin: 2rem;
+    background-color: #000;
 }
 
 .billedeGallerTokyo {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2rem 4rem 2rem 2rem;
+    margin: 2rem 4rem 2rem 2rem;
+    background-color: #000;
 }
 
 .galleriDrømmerejse-textboks {
@@ -885,5 +897,3 @@ textarea {
         padding: 20px;
     }
 }
-
-
