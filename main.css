@@ -348,6 +348,7 @@ card:hover {
 .gallery-track {
     display: flex;
     width: 100%;
+    transition: transform 0.3s ease-out;
 }
 
 .gallery-item {
@@ -405,6 +406,9 @@ card:hover {
 #prevButton{
     left: 0px;
     top:70%;
+    z-index: 10; /* Sørger for, at knappen ligger øverst */
+    pointer-events: auto; /* Sørger for, at den kan klikkes */
+
 }
 
 #nextButton{
@@ -889,7 +893,6 @@ textarea {
     }
 }
 
-
 footer {
     background-color: red !important; /* For at teste om den er der */
     height: 300px !important; /* Sørger for, at den fylder noget */
@@ -952,4 +955,60 @@ footer {
 
 .social-links a:hover {
     text-decoration: underline;
+     }
+/* 🔹 Inputfelter */
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: transparent; /* Transparent baggrund */
+    color: white; /* Hvid tekst */
+    box-sizing: border-box;
+}
+
+/* 🔹 Placeholder-tekst */
+.contact-form-container input::placeholder,
+.contact-form-container textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 🔹 Hover-effekt på input */
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+    border-color: white;
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* 🔹 Send-knap */
+.popup-content button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    color: #007bff; /* Blå tekst for kontrast */
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* 🔹 Hover-effekt på knappen */
+.popup-content button
+.popup-content :hover {
+    background-color: #e6e6e6;
+}
+
+/* 🔹 Mobilvenlig popup */
+@media (max-width: 768px) {
+    .popup-content {
+        width: 95%;
+        padding: 20px;
+    }
 }
