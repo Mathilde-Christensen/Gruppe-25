@@ -71,6 +71,8 @@ button {
     width: 100%;
     z-index: 3;
     /*headeren ligger sig foran videon fra heroen*/
+    display: flex;
+    justify-content: space-between;
 }
 
 .header__logo {
