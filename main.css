@@ -586,35 +586,71 @@ textarea {
 .dropdown-menu li:last-child {
     border-bottom: none;
 }
+/* 🔹 Standard styling for større skærme */
+.contact-form-container {
+    width: 80%;
+    max-width: 600px; /* Forhindrer at den bliver for bred */
+    padding: 25px;
+}
 
-/* 🔹 Gør siden mindre "zoomet" 🔹 */
-@media (max-width: 1024px) {
-    .contact-form-container {
-        width: 80%; /* Gør den bredere på store skærme */
-        padding: 25px;
+/* 🔹 Gør popup'en responsiv og synlig på skærmen */
+.popup {
+    display: none; /* Skjult fra start */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #007bff; /* Blå baggrund */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: auto; /* Sørger for at der kan scrolles hvis nødvendigt */
+}
+
+/* 🔹 Gør popup-indholdet mindre, så hele formularen passer */
+.popup-content {
+    background-color: #007bff; /* Blå baggrund */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 85vh; /* Sørger for at popup'en aldrig bliver for høj */
+    overflow-y: auto; /* Tilføjer scrolling hvis den bliver for lang */
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* 🔹 Gør inputfelter og tekstfelter mindre for at spare plads */
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: transparent;
+    color: white;
+}
+
+/* 🔹 Juster knappen for at sikre den ikke fylder for meget */
+.contact-form-container button {
+    font-size: 16px;
+    padding: 12px;
+}
+
+/* 🔹 Sørger for at popup'en er synlig på store skærme */
+@media (min-width: 1024px) {
+    .popup-content {
+        max-height: 80vh; /* Justerer højden for større skærme */
     }
 }
 
-@media (max-width: 768px) {
-    .contact-form-container {
-        width: 90%; /* Tilpas til tablets */
-    }
-}
 
-@media (max-width: 480px) {
-    .contact-form-container {
-        width: 95%;
-        padding: 20px;
-    }
-
-    .contact-form-container input,
-    .contact-form-container textarea,
-    .contact-form-container .dropdown-btn,
-    .contact-form-container button {
-        font-size: 14px;
-        padding: 12px;
-    }
-}
 
 
 /* drømmerejse galleri */
@@ -642,7 +678,6 @@ textarea {
     position: absolute;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: #FF3700;
     font-family: "Poppins", serif;
     font-weight: 400;
@@ -651,6 +686,55 @@ textarea {
     padding: 1rem;
     font-size: small;
 }
+
+.billedeGallerRiverrafting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem 2rem 2rem 4rem;
+}
+
+.billedeGallerAfrika {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.billedeGallerSydny {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 4rem 2rem 2rem;
+}
+
+.billedeGallerJungle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 2rem 2rem 4rem;
+}
+
+.billedeGallerColombia {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.billedeGallerTokyo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 4rem 2rem 2rem;
+}
+
+.galleriDrømmerejse-textboks {
+    position: absolute;
+}
+
+
 
 /* 🔹 Skjuler popup som standard */
 .popup {
