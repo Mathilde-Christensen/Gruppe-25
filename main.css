@@ -671,6 +671,12 @@ textarea {
 
 .galleri__img {
     width: 100%;
+    opacity: 0.6;
+    transition: transform 0.3s ease-in-out;
+}
+
+.galleri__img:hover {
+    transform: scale(1.1);
 }
 
 .seOplevelse {
@@ -684,48 +690,61 @@ textarea {
     color: #fff;
     padding: 1rem;
     font-size: small;
+    z-index: 1;
 }
 
 .billedeGallerRiverrafting {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2rem 2rem 2rem 4rem;
+    margin: 1.5rem 1.5rem 1.5rem 4rem;
+    background-color: #000;
+    overflow: hidden;
 }
 
 .billedeGallerAfrika {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2rem;
+    margin: 1.5rem;
+    background-color: #000;
+    overflow: hidden;
 }
 
 .billedeGallerSydny {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2rem 4rem 2rem 2rem;
+    margin: 1.5rem 4rem 1.5rem 1.5rem;
+    background-color: #000;
+    overflow: hidden;
 }
 
 .billedeGallerJungle {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2rem 2rem 2rem 4rem;
+    margin: 1.5rem 1.5rem 1.5rem 4rem;
+    background-color: #000;
+    overflow: hidden;
 }
 
 .billedeGallerColombia {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2rem;
+    margin: 1.5rem;
+    background-color: #000;
+    overflow: hidden;
 }
 
 .billedeGallerTokyo {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2rem 4rem 2rem 2rem;
+    margin: 1.5rem 4rem 1.5rem 1.5rem;
+    background-color: #000;
+    overflow: hidden;
 }
 
 .galleriDrømmerejse-textboks {
@@ -754,9 +773,75 @@ textarea {
     padding: 3px;
 }
 
+/* Find fly biletter*/
 
+.findFlyBiletter {
+    border: #FF3700 solid 3px;
+    height: 350px;
+    width: 1300px;
+    text-align: center;
+    margin: 4rem;
+}
 
+.finfFlyBiletterh2 {
+    color: #FF3700;
+    padding: 4rem 0rem 2rem 0rem;
+}
 
+.findFlyBiletterp {
+    font-weight: 300;
+    padding: 0rem 0rem 2rem 0rem;
+}
+
+.søgEfterFlyButton {
+    color: #fff;
+    background-color: #FF3700;
+    padding: 1rem;
+    font-size: small;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Design din drømmerejse */
+
+.designDinEgenRejse {
+    display: flex;
+    height: 500px;
+    width: 1300px;
+    background-color: #FF3700;
+    color: #ffffff;
+    margin: 4rem;
+    font-weight: 300;
+    font-size: small;
+}
+
+.designDinEgenRejse__img {
+    width: 50%;
+    margin: 2rem 0rem;
+}
+
+.designDinEgenRejse__button {
+    color: #FF3700;
+    margin: 1rem 0rem;
+    font-size: small;
+    padding: 1rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.designDinEgenRejse__h2 {
+    margin: 4rem 0rem 2rem 0rem;
+}
+
+.designDinEgenRejse__p1 {
+    margin: 1rem 2rem 1rem 0rem;
+}
+
+.designDinEgenRejse__p2 {
+    padding: 1rem 4rem 1rem 0rem;
+}
+
+.designDinEgenRejse__p3 {
+    padding: 1rem 4rem 1rem 0rem;
+}
 
 /* 🔹 Skjuler popup som standard */
 .popup {
@@ -884,5 +969,3 @@ textarea {
         padding: 20px;
     }
 }
-
-
