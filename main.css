@@ -336,29 +336,25 @@ card:hover {
     background-color: #e6e6e6;
 }
 
-.gallery-container{ /*Container, der skjuler billeder uden for synsfeltet*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.gallery-container {
     width: 100%;
-    overflow: hidden;
-}
-
-.gallery-track{
+    overflow: hidden; /* Sørger for, at billederne ikke ryger ud */
+    position: relative;
     display: flex;
-    flex-wrap: nowrap;
-    gap: 20px;
     justify-content: center;
     align-items: center;
-    transition: transform 0.5s ease-in-out;
-    width: max-content; /* Skal være bred nok til alle billeder */
 }
 
-.gallery-item{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.gallery-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.gallery-item {
+    width: calc(100% / 7); /* Sikrer, at præcis 7 billeder vises */
+    flex: 0 0 auto;
+    text-align:center;
 }
 
 .gallery-item img {
@@ -369,7 +365,6 @@ card:hover {
     margin-top: 30px;
     margin-bottom: 5px;
     border: 4px solid #ffffff;
-    transition: border 0.3s;
 }
 
 .gallery-item img:hover{
@@ -377,16 +372,19 @@ card:hover {
 }
 
 .gallery-name{
-    font-size: 1em;
+    font-size: 0.8em !important;
+    display: block; /* Sikrer, at teksten opfører sig som en blok */
+    text-align: center; /* Centrer teksten */
     font-weight:bold;
     color: #ffffff;
     margin-top: 2px;
 }
 
-.gallery-title{
-    font-size:0.2em;
-    color: #ffffcc;
-    margin-top:0;
+.gallery-title {
+    white-space: nowrap; /* Sørger for at teksten ikke brydes */
+    display: block; /* Sikrer, at teksten opfører sig som en blok */
+    text-align: center; /* Centrer teksten */
+    font-size: 0.5em !important; /* Sørger for at den er mindre end .gallery-name */
 }
 
 #prevButton, #nextButton {
