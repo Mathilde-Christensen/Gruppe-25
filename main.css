@@ -605,3 +605,81 @@ textarea {
 .billedeGalleriDrømmerejse-split2 {
     display: flex;
 }
+/* 🔹 Styling af popup baggrund */
+.popup {
+    display: none; /* Skjult som standard */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Gennemsigtig mørk baggrund */
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🔹 Styling af popup-indhold */
+.popup-content {
+    background-color: #007bff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+    position: relative;
+}
+
+/* 🔹 Luk-knap (X) */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.close:hover {
+    color: #ccc;
+}
+
+/* 🔹 Animation til popup */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* 🔹 Styling af knappen, der åbner popup'en */
+.open-popup-btn {
+    padding: 15px 30px;
+    background-color: white;
+    color: #007bff;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.open-popup-btn:hover {
+    background-color: #e6e6e6;
+}
+
+/* 🔹 Mobilvenlig popup */
+@media (max-width: 768px) {
+    .popup-content {
+        width: 95%;
+        padding: 20px;
+    }
+}

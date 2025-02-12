@@ -39,3 +39,32 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("popup");
+    const openPopupBtn = document.getElementById("openPopup");
+    const closePopupBtn = document.getElementById("closePopup");
+
+    // Åbner popup, når brugeren klikker på "Skriv til os"
+    openPopupBtn.addEventListener("click", function () {
+        popup.style.display = "flex";
+    });
+
+    // Lukker popup ved klik på "X"
+    closePopupBtn.addEventListener("click", function () {
+        popup.style.display = "none";
+    });
+
+    // Lukker popup, hvis brugeren klikker udenfor den
+    window.addEventListener("click", function (event) {
+        if (event.target === popup) {
+            popup.style.display = "none";
+        }
+    });
+
+    // Luk popup ved tryk på "Escape"
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+            popup.style.display = "none";
+        }
+    });
+});
