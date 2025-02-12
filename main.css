@@ -256,7 +256,7 @@ ul {
     padding: 0;
 }
 
-li {
+card {
     background: #FF3700;
     padding: 15px;
     color: #ffffff;
@@ -267,7 +267,7 @@ li {
     border-bottom: 1px solid #ffffff;
 }
 
-li:hover {
+card:hover {
     background: #ee3800; /*hover*/
 }
 
