@@ -39,6 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+const openPopupBtn = document.getElementById("skriv-til-os__button");
+console.log(openPopupBtn, popup); // Tjekker om elementerne findes
+
 document.addEventListener("DOMContentLoaded", function () {
     const openPopupBtn = document.getElementById("openPopup");
     const closePopupBtn = document.getElementById("closePopup");
@@ -85,4 +88,5 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
 

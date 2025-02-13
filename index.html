@@ -152,6 +152,79 @@
 
     </div>
 
+    <div class="findFlyBiletter">
+        <h2 class="finfFlyBiletterh2">FIND BILLIGE FLYBILETTER</h2>
+
+        <P class="findFlyBiletterp">Få de bedste tilbud på dine internationale fly. 
+        Vi sammenligner priser blandt mere end 500 <br> flyselskaber fra hele verden, 
+        for at sikre, 
+        at du får de bedste priser med rabatter til <br> studerende og unge.</P>
+        
+        <button class="søgEfterFlyButton">SØG BILLIGE FLY</button>
+
+    </div>
+
+    <div class="brugForInspiration">
+        <div class="brugForInspiration1">
+
+            <h2 class="brugForInspirationh2">BRUG FOR INSPRIATION?</h2>
+
+            <div class="læsMere">LÆS MERE</div>
+
+            <img class="brugForInspiration_img1" src="billeder/shutterstock_1238715325.jpg" alt="bårde på en flod">
+
+            <h3 class="brugForInspirationhh3">HVOR SKAL DU REJSE HEN I 2025: TOP DESTINATIONER DU IKKE MÅ <br> GÅ GLIP AF</h3>
+
+            <p class="brugForInspirationhp1">Hvis dit nytårsforsæt for 2025 er "planlæg en episk rejse", har vi dig. 
+                Uanset om du er på jagt efter den <br> næste nye hotteste rejsedestination, en skjult perle eller uforglemmelige oplevelser,
+                er disse desti......
+            </p>
+
+            <button class="brugForInspirationButtun">SE ALLE BOGINDLÆG</button>
+
+        </div>
+
+        <div class="brugForInspiration2">
+
+            <div class="læsMere">LÆS MERE</div>
+
+            <img class="brugForInspiration_img2" src="billeder/green-lion-sri-lanka-turtle-conservation-6-6-for-web.jpg" alt="vask">
+
+            <h3 class="brugForInspirationhh32">SÅDAN BOOSTER DU SIN KARRIERE MED <br> FRIVILLIGT ARBEJDE I UDLANDET</h3>
+
+            <p class="brugForInspirationhp2">Overvejer du, hvordan du kan komme videre i din karriere
+            uden straks at <br> blive fanget i den typiske 9-17 rutine? Frivilligt arbejde i udlandet kan være <br>
+            din golden ticket. Vi taler normalt kun om, hvad dit bi......</p>
+
+        </div>
+    </div>
+
+    <div class="designDinEgenRejse">
+        <img class="designDinEgenRejse__img" src="billeder/Skærmbillede 2025-02-12 kl. 20.39.32.png" alt="tegning af kort">
+
+        <div class="designDinEgenRejse__text">
+
+            <h2 class="designDinEgenRejse__h2">DESIGN DIN EGEN REJSE</h2>
+
+            <p class="designDinEgenRejse__p1">Vil du skræddersy din egen store rejse? Sådan gør du:</p>
+
+            <p class="designDinEgenRejse__p2">1. Sammensæt din drømmerejse <br>
+                2. Vi researcher mulighederne for at sammensætte din drømmerute til den <br>bedst mulige pris <br>
+                3. Du får personlig rådgivning fra en af vores rejsekonsulenter <br>
+            </p>
+
+            <p class="designDinEgenRejse__p3">
+                Vi sørger for at din rejse matcher dine drømme, og hjælper dig med at få <br> mest muligt ud af dit budget - 
+                og så giver dig naturligvis vores bedste <br> 
+                rejsetips. Al vores rådgivning er i øvrigt gratis!
+            </p>
+
+            <button class="designDinEgenRejse__button">LAV DIN EGEN REJSE</button>
+
+        </div>
+    </div>
+
+    
 
     <!-- Kirja --> 
     <div class = "billedeGalleri">
@@ -274,6 +347,9 @@
         </div>
         <button id = "nextButton">❯</button>
     </div>
+    <footer>
+        <h1 style="color: white; background-color: black; text-align: center;">TEST FOOTER</h1>
+    </footer> 
 
     <div class="container">
         <h2>REJSEINSPIRATION DIREKTE I INDBAKKEN</h2>
@@ -289,10 +365,7 @@
 
     <!-- Casper --> 
      
-    <!-- 🔹 Knappen der åbner popup'en -->
-<button id="openPopup" class="open-popup-btn">Skriv til os</button>
-
-<!-- 🔹 Popup-container (Skjult som standard) -->
+  <!-- 🔹 Popup-container (Skjult som standard) -->
 <div id="popup" class="popup">
     <div class="popup-content">
         <span id="closePopup" class="close">&times;</span> <!-- Luk-knap -->
@@ -304,7 +377,8 @@
                     Drømmer du om et eventyr i udlandet? Ved du, hvor du vil hen, eller synes du, det er svært at vælge? 
                     Send os dine tanker, drømme og spørgsmål, og vi hjælper dig med at få dine drømme til at gå i opfyldelse.
                 </p>
-    
+
+                <!-- 🔹 Dropdown-menu -->
                 <label for="dropdownBtn">Jeg vil gerne vide mere om *</label>
                 <div class="dropdown">
                     <button id="dropdownBtn" class="dropdown-btn">Vælg en kategori ▼</button>
@@ -317,31 +391,45 @@
                     </ul>
                     <input type="hidden" id="selectedTopic" name="topic" required>
                 </div>
-    
-                <label for="firstName">Fornavn *</label>
-                <input type="text" id="firstName" name="firstName" required>
-    
-                <label for="lastName">Efternavn *</label>
-                <input type="text" id="lastName" name="lastName" required>
-    
-                <label for="email">Mail *</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="phone">Telefon *</label>
-                <input type="tel" id="phone" name="phone" required>
-    
+
+                <!-- 🔹 Felter opdelt i to kolonner -->
+                <div class="input-grid">
+                    <div>
+                        <label for="firstName">Fornavn *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div>
+                        <label for="lastName">Efternavn *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="input-grid">
+                    <div>
+                        <label for="email">Mail *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">Telefon *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <!-- 🔹 Beskedfelt -->
                 <label for="message">Din besked *</label>
                 <textarea id="message" name="message" placeholder="Har du særlige ønsker, alternative rejsedage osv.?" required></textarea>
-    
-                <button type="submit">SEND BESKED</button>
+
+                <!-- 🔹 Send-knap -->
+                <button type="submit">Send besked</button>
             </form>
         </div>
+    </div>  
     </div>
 
 
+</div>
+  
+
+</div> 
 </body>
 </html>
-
-</body>
-</html>
-
