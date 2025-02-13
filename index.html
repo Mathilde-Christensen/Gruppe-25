@@ -347,56 +347,23 @@
         </div>
         <button id = "nextButton">❯</button>
     </div>
-    <footer>
-        <h1 style="color: white; background-color: black; text-align: center;">TEST FOOTER</h1>
-    </footer> 
 
     <!-- Casper --> 
      
-    <!-- 🔹 Knappen der åbner popup'en -->
-<button id="openPopup" class="open-popup-btn">Skriv til os</button>
-
-   <!-- 🔹 Popup-container (skjult fra start) -->
-<!-- 🔹 Popup-container (Skjult som standard) -->
+  <!-- 🔹 Popup-container (Skjult som standard) -->
 <div id="popup" class="popup">
     <div class="popup-content">
         <span id="closePopup" class="close">&times;</span> <!-- Luk-knap -->
 
         <div class="contact-form-container">
-            <h1>SKRIV TIL OS</h1>
-            <p>
-                Drømmer du om et eventyr i udlandet? Send os dine tanker, drømme og spørgsmål.
-            </p>
-
-            <!-- 🔹 Formular -->
             <form id="contactForm">
-
-                <label for="firstName">Fornavn *</label>
-                <input type="text" id="firstName" name="firstName" required>
-
-                <label for="lastName">Efternavn *</label>
-                <input type="text" id="lastName" name="lastName" required>
-
-                <label for="email">Mail *</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="phone">Telefon *</label>
-                <input type="tel" id="phone" name="phone" required>
-
-                <label for="message">Din besked *</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send besked</button>
-            </form>
-        </div>
-    </div>
-</div>
                 <h1>SKRIV TIL OS</h1>
                 <p>
                     Drømmer du om et eventyr i udlandet? Ved du, hvor du vil hen, eller synes du, det er svært at vælge? 
                     Send os dine tanker, drømme og spørgsmål, og vi hjælper dig med at få dine drømme til at gå i opfyldelse.
                 </p>
-    
+
+                <!-- 🔹 Dropdown-menu -->
                 <label for="dropdownBtn">Jeg vil gerne vide mere om *</label>
                 <div class="dropdown">
                     <button id="dropdownBtn" class="dropdown-btn">Vælg en kategori ▼</button>
@@ -409,29 +376,47 @@
                     </ul>
                     <input type="hidden" id="selectedTopic" name="topic" required>
                 </div>
-    
-                <label for="firstName">Fornavn *</label>
-                <input type="text" id="firstName" name="firstName" required>
-    
-                <label for="lastName">Efternavn *</label>
-                <input type="text" id="lastName" name="lastName" required>
-    
-                <label for="email">Mail *</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="phone">Telefon *</label>
-                <input type="tel" id="phone" name="phone" required>
-    
+
+                <!-- 🔹 Felter opdelt i to kolonner -->
+                <div class="input-grid">
+                    <div>
+                        <label for="firstName">Fornavn *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div>
+                        <label for="lastName">Efternavn *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="input-grid">
+                    <div>
+                        <label for="email">Mail *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">Telefon *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <!-- 🔹 Beskedfelt -->
                 <label for="message">Din besked *</label>
                 <textarea id="message" name="message" placeholder="Har du særlige ønsker, alternative rejsedage osv.?" required></textarea>
-    
-                <button type="submit">SEND BESKED</button>
+
+                <!-- 🔹 Send-knap -->
+                <button type="submit">Send besked</button>
             </form>
         </div>
     </div>  
     </div>
 
 
-    
+</div>
+  
+</div> 
+<footer>
+    <h1 style="color: white; background-color: black; text-align: center;">TEST FOOTER</h1>
+</footer> 
 </body>
 </html>
