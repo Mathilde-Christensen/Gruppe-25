@@ -855,6 +855,10 @@ textarea {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.hvorforRejseMedKILROYtext {
+    display: flex;
+}
+
 /* 🔹 Skjuler popup som standard */
 .popup {
     display: flex !important; /* Tvinger popup frem for test */      
