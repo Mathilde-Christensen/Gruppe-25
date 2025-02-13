@@ -14,11 +14,11 @@ document.addEventListener("DOMContentLoaded", function() {
         { title: "Rejsegavekort", subItems: [] }
     ];
 
-    const menuList = document.getElementById("menu-list");
+    const menuList = document.getElementById("menu-list"); 
     const menuToggle = document.getElementById("menu-toggle");
     const menu = document.getElementById("menu");
 
-    menuToggle.addEventListener("click", function() { /**/ 
+    menuToggle.addEventListener("click", function() { 
         menu.classList.toggle("open");
     });
     
@@ -57,3 +57,13 @@ document.addEventListener("DOMContentLoaded", function() {
         menuList.appendChild(card);
     });
 });
+
+
+
+
+
+/* boksen*/
+
+function tilmeld() {
+    alert("Tak for din tilmelding!");
+}
