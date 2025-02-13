@@ -861,7 +861,7 @@ textarea {
 
 /* 🔹 Skjuler popup som standard */
 .popup {
-    display: flex !important; /* Tvinger popup frem for test */      
+    display: none; /* Skjult fra start */          
     position: fixed;
     top: 0;
     left: 0;
