@@ -61,9 +61,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
-/* boksen*/
-
-function tilmeld() {
-    alert("Tak for din tilmelding!");
-}
