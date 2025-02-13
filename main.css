@@ -1034,15 +1034,13 @@ footer {
     text-decoration: underline;
 }
 
-.footer-logos img {
-    width: 50px;
-    margin-right: 10px;
+.footeroverskrift,.footeroverskrift2{
+    font-size:1.6em !important;
 }
-
-/* Nederste footer (Orange sektion) */
 
 .footer-bottom {
     background-color: #FF3700;
+    height: 150px;
     color: white;
     text-align: center;
     padding: 20px;
@@ -1051,7 +1049,7 @@ footer {
 
 .social-links a {
     color: white;
-    margin: 0 15px;
+    margin: 0px 15px;
     text-decoration: none;
 }
 
