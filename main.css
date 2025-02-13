@@ -776,9 +776,10 @@ textarea {
 
 .brugForInspiration_img2 {
     width: 100%;
+    padding: 2rem 4rem 0rem 1rem;
 }
 
-.læsMere {
+.læsMere1 {
     position: absolute;
     background-color: #FF3700;
     font-family: "Poppins", serif;
@@ -790,6 +791,22 @@ textarea {
     z-index: 1;
     padding: 1rem;
     font-size: small;
+    margin: 4rem 0rem 0rem 27rem;
+}
+
+.læsMere2 {
+    position: absolute;
+    background-color: #FF3700;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    padding: 1rem;
+    font-size: small;
+    z-index: 1;
+    padding: 1rem;
+    font-size: small;
+    margin: 2rem 0rem 0rem 13rem;
 }
 
 .brugForInspirationh2 {
@@ -819,15 +836,32 @@ textarea {
 }
 
 .brugForInspirationButtun {
-    background-color: #ee3800;
+    background-color: #FF3700;
+    color: #fff;
+    font-size: small;
+    padding: 1rem;
+    margin: 0rem 0rem 0rem 4rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+.brugForInspirationhp2 {
+    font-size: small;
+    padding: 1rem 4rem 1rem 1rem;
+}
+
+.brugForInspirationhh32 {
+    font-size: x-large;
+    padding: 1rem 4rem 0rem 1rem;
+}
+
+/* hvorfor rejse med kilroy*/
 
 .hvorforRejseMedKILROYtext {
     display: flex;
 }
 
 .hvorforRejseMedKILROYh4 {
-    color: #ee3800;
+    color: #FF3700;
     text-align: center;
 }
 
@@ -836,8 +870,21 @@ textarea {
 }
 
 .hvorforRejseMedKILROYh2 {
-    color: #ee3800;
+    color: #FF3700;
     text-align: center;
+    margin: 7rem 0rem 0rem 0rem;
+}
+
+.SkræddersyedeRejsetips {
+    margin: 2rem 1rem 5rem 4rem;
+}
+
+.Sikkerhed {
+    margin: 2rem 1rem 5rem 1rem;
+}
+
+.Kvalitet {
+    margin: 2rem 4rem 5rem 1rem;
 }
 
 /* 🔹 Skjuler popup som standard */
@@ -971,13 +1018,13 @@ textarea {
 .dropdown-menu li {
     padding: 12px 16px;
     cursor: pointer;
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid #007bff;
     color: #007bff;
 }
 
 /* 🔹 Hover-effekt */
 .dropdown-menu li:hover {
-    background-color: #f1f1f1;
+    background-color: white;
 }
 
 /* 🔹 Skjul sidste border */
@@ -1034,15 +1081,13 @@ footer {
     text-decoration: underline;
 }
 
-.footer-logos img {
-    width: 50px;
-    margin-right: 10px;
+.footeroverskrift,.footeroverskrift2{
+    font-size:1.6em !important;
 }
-
-/* Nederste footer (Orange sektion) */
 
 .footer-bottom {
     background-color: #FF3700;
+    height: 150px;
     color: white;
     text-align: center;
     padding: 20px;
@@ -1051,7 +1096,7 @@ footer {
 
 .social-links a {
     color: white;
-    margin: 0 15px;
+    margin: 0px 15px;
     text-decoration: none;
 }
 
