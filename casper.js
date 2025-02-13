@@ -40,9 +40,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 document.addEventListener("DOMContentLoaded", function () {
-    const openPopupBtn = document.getElementById("openPopup");
+    const openPopupBtn = document.getElementById("skriv-til-os__button"); // Opdateret ID
     const closePopupBtn = document.getElementById("closePopup");
     const popup = document.getElementById("popup");
+
+    if (!openPopupBtn || !closePopupBtn || !popup) {
+        console.error("Popup-elementer ikke fundet.");
+        return;
+    }
 
     // Åbn popup
     openPopupBtn.addEventListener("click", function () {
@@ -54,35 +59,12 @@ document.addEventListener("DOMContentLoaded", function () {
         popup.style.display = "none";
     });
 
-    // Luk popup, hvis man klikker udenfor formularen
+    // Luk popup ved klik udenfor boksen
     window.addEventListener("click", function (event) {
         if (event.target === popup) {
             popup.style.display = "none";
         }
     });
-
-    // Dropdown-menu funktionalitet
-    const dropdownBtn = document.getElementById("dropdownBtn");
-    const dropdownMenu = document.getElementById("dropdownMenu");
-
-    dropdownBtn.addEventListener("click", function (event) {
-        event.stopPropagation(); // Stop klik fra at lukke dropdown
-        dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
-    });
-
-    // Luk dropdown, hvis der klikkes udenfor
-    document.addEventListener("click", function (event) {
-        if (!dropdownBtn.contains(event.target) && !dropdownMenu.contains(event.target)) {
-            dropdownMenu.style.display = "none";
-        }
-    });
-
-    // Vælg dropdown-element
-    dropdownMenu.addEventListener("click", function (event) {
-        if (event.target.tagName === "LI") {
-            dropdownBtn.textContent = event.target.textContent + " ▼";
-            dropdownMenu.style.display = "none";
-        }
-    });
 });
+
 

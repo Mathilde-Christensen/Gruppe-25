@@ -317,69 +317,36 @@
      
 
 
-   <!-- 🔹 Popup-container (Skjult som standard) -->
+   <!-- 🔹 Popup-container (skjult fra start) -->
 <div id="popup" class="popup">
     <div class="popup-content">
         <span id="closePopup" class="close">&times;</span> <!-- Luk-knap -->
 
         <div class="contact-form-container">
+            <h1>SKRIV TIL OS</h1>
+            <p>
+                Drømmer du om et eventyr i udlandet? Send os dine tanker, drømme og spørgsmål.
+            </p>
+
+            <!-- 🔹 Formular -->
             <form id="contactForm">
-                <h1>SKRIV TIL OS</h1>
-                <p>
-                    Drømmer du om et eventyr i udlandet? Ved du, hvor du vil hen, eller synes du, det er svært at vælge? 
-                    Send os dine tanker, drømme og spørgsmål, og vi hjælper dig med at få dine drømme til at gå i opfyldelse.
-                </p>
+                <label for="firstName">Fornavn *</label>
+                <input type="text" id="firstName" name="firstName" required>
 
-                <!-- 🔹 Dropdown-menu -->
-                <label for="dropdownBtn">Jeg vil gerne vide mere om *</label>
-                <div class="dropdown">
-                    <button id="dropdownBtn" class="dropdown-btn">Vælg en kategori ▼</button>
-                    <ul id="dropdownMenu" class="dropdown-menu">
-                        <li data-value="Rejser med KILROY">Rejser med KILROY</li>
-                        <li data-value="Backpacking">Backpacking</li>
-                        <li data-value="Eventyrrejser">Eventyrrejser</li>
-                        <li data-value="Safari">Safari</li>
-                        <li data-value="Kulturrejser">Kulturrejser</li>
-                    </ul>
-                    <input type="hidden" id="selectedTopic" name="topic" required>
-                </div>
+                <label for="lastName">Efternavn *</label>
+                <input type="text" id="lastName" name="lastName" required>
 
-                <!-- 🔹 Felter opdelt i to kolonner -->
-                <div class="input-grid">
-                    <div>
-                        <label for="firstName">Fornavn *</label>
-                        <input type="text" id="firstName" name="firstName" required>
-                    </div>
-                    <div>
-                        <label for="lastName">Efternavn *</label>
-                        <input type="text" id="lastName" name="lastName" required>
-                    </div>
-                </div>
+                <label for="email">Mail *</label>
+                <input type="email" id="email" name="email" required>
 
-                <div class="input-grid">
-                    <div>
-                        <label for="email">Mail *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div>
-                        <label for="phone">Telefon *</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                </div>
+                <label for="phone">Telefon *</label>
+                <input type="tel" id="phone" name="phone" required>
 
-                <!-- 🔹 Beskedfelt -->
                 <label for="message">Din besked *</label>
-                <textarea id="message" name="message" placeholder="Har du særlige ønsker, alternative rejsedage osv.?" required></textarea>
+                <textarea id="message" name="message" required></textarea>
 
-                <!-- 🔹 Send-knap -->
                 <button type="submit">Send besked</button>
             </form>
         </div>
     </div>
-
 </div>
-    <footer>
-        <h1 style="color: white; background-color: black; text-align: center;">TEST FOOTER</h1>
-    </footer>   
-</body>
-</html>
