@@ -808,27 +808,27 @@ textarea {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 123, 255, 0.98); /* Kilroy blå */
-    display: flex;
+    background-color: rgba(0, 123, 255, 0.95); /* Blå baggrund */
     justify-content: center;
     align-items: center;
     z-index: 9999;
     padding: 20px;
 }
 
+
 /* 🔹 Popup-indhold */
 .popup-content {
-    background-color: #007bff; /* Kilroy blå */
+    background-color: #007bff; /* Samme blå som baggrunden */
     padding: 25px;
     border-radius: 12px;
     width: 500px;
     max-width: 90%;
-    max-height: 90vh; /* Sikrer, at formularen ikke bliver for høj */
+    max-height: 90vh; /* Sørger for, at formularen ikke bliver for høj */
     text-align: center;
     color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     position: relative;
-    overflow-y: auto; /* Gør det muligt at scrolle, hvis nødvendigt */
+    overflow-y: auto; /* Kun scrolling i popup hvis nødvendigt */
 }
 
 /* 🔹 Luk-knap */
@@ -945,14 +945,12 @@ textarea {
     border-bottom: none;
 }
 
-/* 🔹 Mobilvenlig popup */
 @media (max-width: 768px) {
     .popup-content {
         width: 95%;
         padding: 20px;
     }
 }
-
 
     .input-grid {
         grid-template-columns: 1fr; /* Skifter til én kolonne på mindre skærme */
