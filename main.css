@@ -1087,6 +1087,12 @@ footer {
     padding-right: 70px;
 }
 
+.footer-column2 h4{
+    padding:0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 .footer-column3 {
     position: absolute;
     bottom: 0;
@@ -1130,16 +1136,21 @@ footer {
 
 .footer-column2 ul {
     display: flex;
-    flex-wrap: wrap; /* Tillader linjeskift hvis nødvendigt */
-    gap: 1px; /* Afstand mellem links */
+    flex-wrap: wrap;
+    gap: 3px; 
     padding: 0;
+
+}
+
+.footer-column3 h3{
+    margin-left:40px;
 }
 
 .footer-logos img {
-    width: 120px; /* Juster størrelsen på logoerne */
+    width: 420px;
     height: auto;
     display: block;
-    margin: auto;
+    margin-left:20px;
 }
 
 .footeroverskrift,.footeroverskrift2{
