@@ -5,11 +5,12 @@ const nextButton = document.getElementById("nextButton");
 
 let index = 0;
 const imagesPerSlide = 7; // Antal synlige billeder per slide (minus sidste side, hvor der er 3)
+const scrollStep = 4; 
 const totalImages = images.length; // Tæller hvor mange billeder, der er i galleriet
 
 const imageWidth = images[0].getBoundingClientRect().width; //Henter bredden af et billede dynamisk og sikrer nøjagtig bredde af billede
 const scrollAmount = imageWidth * imagesPerSlide; //Beregner hvor langt der scrolles, når der skiftes slide
-const maxIndex = Math.floor((totalImages - 1) / imagesPerSlide); // Undgå tom side da Math.floor sørger for at der altid er heltal af billeder på side
+const maxIndex = Math.ceil((totalImages - 1) / imagesPerSlide); // Undgå tom side da Math.floor sørger for at der altid er heltal af billeder på side
 
 
 function animateScroll(targetIndex) {
@@ -42,3 +43,6 @@ function scrollGallery(direction) {
 // Event listeners til pilene
 nextButton.addEventListener("click", () => scrollGallery(1));
 prevButton.addEventListener("click", () => scrollGallery(-1));
+
+// Sørger for at billeder starter korrekt ved første load
+window.addEventListener("load", updateScroll);
