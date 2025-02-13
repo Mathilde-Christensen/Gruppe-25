@@ -984,10 +984,10 @@ textarea {
 }
 
 .dropdown-btn {
-    background-color: #007bff;
+    background-color: white;
     color: #007bff;
     padding: 12px;
-    border: 2px solid #007bff;
+    border: 2px solid white;
     cursor: pointer;
     font-size: 16px;
     width: 100%;
@@ -1024,7 +1024,7 @@ textarea {
 
 /* 🔹 Hover-effekt */
 .dropdown-menu li:hover {
-    background-color: #007bff;
+    background-color: white;
 }
 
 /* 🔹 Skjul sidste border */
@@ -1081,15 +1081,13 @@ footer {
     text-decoration: underline;
 }
 
-.footer-logos img {
-    width: 50px;
-    margin-right: 10px;
+.footeroverskrift,.footeroverskrift2{
+    font-size:1.6em !important;
 }
-
-/* Nederste footer (Orange sektion) */
 
 .footer-bottom {
     background-color: #FF3700;
+    height: 150px;
     color: white;
     text-align: center;
     padding: 20px;
@@ -1098,7 +1096,7 @@ footer {
 
 .social-links a {
     color: white;
-    margin: 0 15px;
+    margin: 0px 15px;
     text-decoration: none;
 }
 
