@@ -721,6 +721,10 @@ textarea {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.søgEfterFlyButton:hover {
+    filter: brightness(0.85);
+}
+
 /* Design din drømmerejse */
 
 .designDinEgenRejse {
@@ -745,6 +749,10 @@ textarea {
     font-size: small;
     padding: 1rem;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.designDinEgenRejse__button:hover {
+    filter: brightness(0.85);
 }
 
 .designDinEgenRejse__h2 {
@@ -844,6 +852,11 @@ textarea {
     margin: 0rem 0rem 0rem 4rem;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+.brugForInspirationButtun:hover {
+    filter: brightness(0.85);
+}
+
 
 .brugForInspirationhp2 {
     font-size: small;
