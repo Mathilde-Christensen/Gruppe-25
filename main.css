@@ -1023,18 +1023,3 @@ footer {
     width: 50px;
     margin-right: 10px;
 }
-
-/* Nederste footer (Orange sektion) */
-.footer-bottom {
-    background-color: #FF3700;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-weight: bold;
-}
-
-.social-links a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-}
