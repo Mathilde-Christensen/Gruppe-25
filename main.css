@@ -767,6 +767,7 @@ textarea {
 
 .brugForInspiration {
     display: flex;
+    padding: 4rem 0rem;
 }
 
 .brugForInspiration_img1 {
