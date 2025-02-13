@@ -857,7 +857,7 @@ textarea {
 
 /* 🔹 Skjuler popup som standard */
 .popup {
-    display: none; /* Skjult fra start */
+    display: flex !important; /* Tvinger popup frem for test */      
     position: fixed;
     top: 0;
     left: 0;
@@ -1055,19 +1055,4 @@ footer {
 .footer-logos img {
     width: 50px;
     margin-right: 10px;
-}
-
-/* Nederste footer (Orange sektion) */
-.footer-bottom {
-    background-color: #FF3700;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-weight: bold;
-}
-
-.social-links a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
 }
