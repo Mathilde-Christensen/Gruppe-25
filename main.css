@@ -767,20 +767,18 @@ textarea {
 
 .brugForInspiration {
     display: flex;
-    padding: 3rem 0rem 0rem 0rem;
 }
 
 .brugForInspiration_img1 {
     width: 100%;
-    padding: 3rem 2rem 2rem 4rem;
+    padding: 4rem 2rem 2rem 4rem;
 }
 
 .brugForInspiration_img2 {
     width: 100%;
-    padding: 2rem 4rem 2rem 1rem;
 }
 
-.læsMere1 {
+.læsMere {
     position: absolute;
     background-color: #FF3700;
     font-family: "Poppins", serif;
@@ -792,22 +790,6 @@ textarea {
     z-index: 1;
     padding: 1rem;
     font-size: small;
-    margin: 3rem 0rem 0rem 27rem;
-}
-
-.læsMere2 {
-    position: absolute;
-    background-color: #FF3700;
-    font-family: "Poppins", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #fff;
-    padding: 1rem;
-    font-size: small;
-    z-index: 1;
-    padding: 1rem;
-    font-size: small;
-    margin: 2rem 0rem 0rem 12rem;
 }
 
 .brugForInspirationh2 {
@@ -831,28 +813,13 @@ textarea {
     padding: 0rem 2rem 1rem 4rem;
 }
 
-.brugForInspirationhh32 {
-    font-size: x-large;
-    padding: 0rem 4rem 1rem 1rem;
-}
-
 .brugForInspirationhp1 {
     font-size: small;
     padding: 0rem 2rem 1rem 4rem;
 }
 
-.brugForInspirationhp2 {
-    font-size: small;
-    padding: 0rem 4rem 1rem 1rem;
-}
-
 .brugForInspirationButtun {
     background-color: #ee3800;
-    color: #fff;
-    font-size: small;
-    padding: 1rem;
-    margin: 0rem 0rem 1rem 4rem;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .hvorforRejseMedKILROYtext {
@@ -861,7 +828,7 @@ textarea {
 
 /* 🔹 Skjuler popup som standard */
 .popup {
-    display: none; /* Skjult fra start */          
+    display: none; /* Skjult fra start */
     position: fixed;
     top: 0;
     left: 0;
@@ -1014,49 +981,3 @@ textarea {
     .input-grid {
         grid-template-columns: 1fr; /* Skifter til én kolonne på mindre skærme */
     }
-
-
-footer {
-    background-color: red !important; /* For at teste om den er der */
-    height: 300px !important; /* Sørger for, at den fylder noget */
-    display: block !important;
-    visibility: visible !important;
-}
-
-/* Øverste footer (Grå sektion) */
-.footer-top {
-    background-color: #f5f5f5; /* Beige/grå baggrund */
-    padding: 40px 80px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-column {
-    width: 30%;
-}
-
-.footer-column h3 {
-    font-style: italic;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-}
-
-.footer-column p {
-    font-size: 0.9rem;
-    margin-bottom: 8px;
-    color: #333;
-}
-
-.footer-column a {
-    color: #d80000; /* Rød farve til links */
-    text-decoration: none;
-}
-
-.footer-column a:hover {
-    text-decoration: underline;
-}
-
-.footer-logos img {
-    width: 50px;
-    margin-right: 10px;
-}
