@@ -763,6 +763,43 @@ textarea {
     padding: 1rem 4rem 1rem 0rem;
 }
 
+/* indspriation */
+
+.brugForInspiration {
+    display: flex;
+}
+
+.brugForInspiration_img1 {
+    width: 100%;
+}
+
+.brugForInspiration_img2 {
+    width: 100%;
+}
+
+.læsMere {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: #FF3700;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    padding: 1rem;
+    font-size: small;
+    z-index: 1;
+    padding: 1rem;
+    font-size: small;
+}
+
+.brugForInspirationh2 {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 3.5em;
+    line-height: 4rem;
+}
 /* 🔹 Skjuler popup som standard */
 .popup {
     display: none; /* Skjult fra start */
