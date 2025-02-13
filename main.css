@@ -1062,18 +1062,41 @@ footer {
     font-family: "Poppins", sans-serif;
 }
 
-
 .footer-top {
-    height:700px;
-    background-color: #f5f5f5;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    height:700px;
+    background-color: #f5f5f5;
+}
+
+.footer-column1, .footer-column2 {
+    flex: 1;
 }
 
 .footer-column1{
-    flex: 1;
     margin-left:60px;
     padding-top: 70px;
+}
+
+.footer-column2 {
+    margin-left:30px;
+    padding-top:70px;
+    padding-right: 70px;
+}
+
+.footer-column3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.footer-column3 h3 {
+    font-size: 1rem; /* Gør skriften mindre */
+    text-align: left;
 }
 
 .lilleoverskrift{
@@ -1082,13 +1105,6 @@ footer {
 
 .adresser{
     padding-top: 20px;
-}
-
-.footer-column2 {
-    flex: 1;
-    margin-left:30px;
-    padding-top:70px;
-    padding-right: 70px;
 }
 
 .footer-column1 h3, .footer-column2 h3 {
@@ -1117,6 +1133,13 @@ footer {
     flex-wrap: wrap; /* Tillader linjeskift hvis nødvendigt */
     gap: 1px; /* Afstand mellem links */
     padding: 0;
+}
+
+.footer-logos img {
+    width: 120px; /* Juster størrelsen på logoerne */
+    height: auto;
+    display: block;
+    margin: auto;
 }
 
 .footeroverskrift,.footeroverskrift2{
