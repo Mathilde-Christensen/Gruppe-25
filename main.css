@@ -1104,3 +1104,69 @@ footer {
 
 /*alice*/
 
+.container {
+    margin: 4rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    background-color: #f1efef;
+    padding: 4rem 20rem;
+}
+
+.rejsens_skrift {
+    color: #ff4500;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 3em;
+    line-height: 3rem;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.rejsens_p {
+    font-family: "Poppins", sans-serif;
+    color: #ff4500;
+    font-size: 13px;
+
+}
+
+.input-tekstboks {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.input-tekstboks input,
+.full-width {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 15px;
+    background-color: #f1efef;
+    margin: 1rem;
+}
+
+.knappens {
+    background-color: #ffffff;
+    color: #FF3700;
+    font-size: 13px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 1cm;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.knappens:hover {
+    background-color: #f9e5de;
+}
+
+
+
+
+
+/**//*/*/
