@@ -826,6 +826,20 @@ textarea {
     display: flex;
 }
 
+.hvorforRejseMedKILROYh4 {
+    color: #ee3800;
+    text-align: center;
+}
+
+.hvorforRejseMedKILROYp {
+    text-align: center;
+}
+
+.hvorforRejseMedKILROYh2 {
+    color: #ee3800;
+    text-align: center;
+}
+
 /* 🔹 Skjuler popup som standard */
 .popup {
     display: none; /* Skjult fra start */
