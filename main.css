@@ -1068,29 +1068,78 @@ footer {
     align-items: flex-start;
     flex-wrap: wrap;
     position: relative;
-    height:700px;
+    height:750px;
     background-color: #f5f5f5;
 }
 
-.footer-column1, .footer-column2 {
-    flex: 1;
-}
-
 .footer-column1{
+    flex:1;
     margin-left:60px;
     padding-top: 70px;
 }
 
 .footer-column2 {
+    flex:1;
     margin-left:30px;
     padding-top:70px;
     padding-right: 70px;
+    font-size: 0.9em !important;
+}
+
+.footer-column2 p{
+    margin-bottom:30px !important;
+    line-height: 1.8em;
 }
 
 .footer-column2 h4{
+    font-size: 1em !important;
     padding:0;
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+.english{
+    margin-top:50px !important;
+}
+
+.lilleoverskrift{
+    font-size: 1em !important;
+}
+
+.adresser p{
+    margin-bottom: 30px !important;
+    margin-top: 20px;
+    line-height: 1.8em;
+}
+
+.footer-column1 h3, .footer-column2 h3 {
+    font-style: italic;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+.footer-column1 p, .footer-column2 p {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+.footer-column1 a, .footer-column2 a {
+    color: #ff4500;
+    text-decoration: underline;
+}
+
+.footer-column1 a:hover, .footer-column2 a:hover  {
+    text-decoration: none;
+}
+
+.footer-column2 ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px; 
+    padding: 0;
+    line-height: 1.6em;
+
 }
 
 .footer-column3 {
@@ -1101,49 +1150,14 @@ footer {
 }
 
 .footer-column3 h3 {
-    font-size: 1rem; 
+    font-size: 0.9em; 
     text-align: left;
-}
-
-.lilleoverskrift{
-    font-size: 1em !important;
-}
-
-.adresser{
-    padding-top: 20px;
-}
-
-.footer-column1 h3, .footer-column2 h3 {
-    font-style: italic;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-}
-
-.footer-column1 p, .footer-column2 p {
-    font-size: 0.9rem;
-    margin-bottom: 8px;
-    color: #333;
-}
-
-.footer-column1 a, .footer-column2 a {
-    color: #d80000;
-    text-decoration: underline;
-}
-
-.footer-column1 a:hover,.footer-column2 a:hover  {
-    text-decoration: none;
-}
-
-.footer-column2 ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3px; 
-    padding: 0;
-
+    margin-left:40px;
 }
 
 .footer-column3 h3{
-    margin-left:40px;
+    font-weight: 500 !important;
+    font-style: normal !important;
 }
 
 .footer-logos img {
@@ -1153,12 +1167,8 @@ footer {
     margin-left:20px;
 }
 
-.footeroverskrift,.footeroverskrift2{
-    font-size:1.6em !important;
-}
-
 .footer-bottom {
-    background-color: #FF3700;
+    background-color: #ff4500;
     height: 150px;
     color: #ffffff;
     text-align: center;
@@ -1168,12 +1178,11 @@ footer {
 }
 
 .social-links a {
-    color: white;
+    color: #ffffff;
     margin: 0px 15px;
     text-decoration: none;
     font-style: italic;
 }
-
 
 
 /*alice's boks*/
