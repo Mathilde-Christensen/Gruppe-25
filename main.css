@@ -822,6 +822,10 @@ textarea {
     background-color: #ee3800;
 }
 
+.hvorforRejseMedKILROYtext {
+    display: flex;
+}
+
 /* 🔹 Skjuler popup som standard */
 .popup {
     display: none; /* Skjult fra start */
