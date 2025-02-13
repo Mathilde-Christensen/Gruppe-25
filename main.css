@@ -1166,11 +1166,11 @@ footer {
     font-family: "Poppins", sans-serif;
     color: #ff4500;
     font-size: 13px;
+    padding: 2rem 0rem;
 
 }
 
 .input-tekstboks {
-    font-family: "Poppins", sans-serif;
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -1185,7 +1185,7 @@ footer {
     font-size: 16px;
     padding: 15px;
     background-color: #f1efef;
-    margin: 1rem;
+    margin: 0.0rem;
 }
 
 .knappens {
@@ -1196,13 +1196,13 @@ footer {
     padding: 10px 20px;
     cursor: pointer;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 1cm;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .knappens:hover {
-    background-color: #f9e5de;
+    background-color: #f6e9e4;
 }
 
 
