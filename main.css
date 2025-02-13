@@ -1101,7 +1101,7 @@ footer {
 }
 
 .footer-column3 h3 {
-    font-size: 1rem; /* Gør skriften mindre */
+    font-size: 1rem; 
     text-align: left;
 }
 
@@ -1126,7 +1126,7 @@ footer {
 }
 
 .footer-column1 a, .footer-column2 a {
-    color: #d80000; /*Linksfarve*/
+    color: #d80000;
     text-decoration: underline;
 }
 
