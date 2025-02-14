@@ -4,7 +4,7 @@ const prevButton = document.getElementById("prevButton");
 const nextButton = document.getElementById("nextButton");
 
 let index = 0;
-const imagesPerSlide = 7; // Antal synlige billeder per slide (minus sidste side, hvor der er 3)
+const imagesPerSlide = 7; // Antal synlige billeder per slide
 const scrollStep = 3; 
 const totalImages = images.length; // Tæller hvor mange billeder, der er i galleriet
 
@@ -44,5 +44,3 @@ function scrollGallery(direction) {
 nextButton.addEventListener("click", () => scrollGallery(1));
 prevButton.addEventListener("click", () => scrollGallery(-1));
 
-// Sørger for at billeder starter korrekt ved første load
-window.addEventListener("load", updateScroll);

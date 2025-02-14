@@ -38,8 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-const openPopupBtn = document.getElementById("skriv-til-os__button");
-console.log(openPopupBtn, popup); // Tjekker om elementerne findes
+
 document.addEventListener("DOMContentLoaded", function () {
     // Få fat i elementerne
     const openPopupBtn = document.getElementById("skriv-til-os__button"); // Åbn-knappen
